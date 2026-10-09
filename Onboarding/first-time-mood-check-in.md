@@ -69,8 +69,34 @@ Use a simple mapping from the explicitly selected mood to an editorially curated
 
 Themes guide content curation; the final verse collections must be reviewed before release. Use approved Scripture text and always display the reference and translation. Do not generate or rewrite a passage and present it as Scripture.
 
-Design sample: **Psalm 46:1 — King James Version (KJV)**:
-> God is our refuge and strength, a very present help in trouble.
+### Initial mood-to-verse content
+
+Use the following fixed mapping for the first release. All passages use **King James Version (KJV)**. Display the full text below, reference, and translation; do not modernize or paraphrase Scripture in the verse card.
+
+| Selection | Reference | Verse text (KJV) |
+|---|---|---|
+| Happy | Psalm 118:24 | This is the day which the Lord hath made; we will rejoice and be glad in it. |
+| Peaceful | Psalm 29:11 | The Lord will give strength unto his people; the Lord will bless his people with peace. |
+| Okay | Psalm 121:2 | My help cometh from the Lord, which made heaven and earth. |
+| Sad | Psalm 34:18 | The Lord is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit. |
+| Anxious | Psalm 56:3 | What time I am afraid, I will trust in thee. |
+| Overwhelmed | Matthew 11:28 | Come unto me, all ye that labour and are heavy laden, and I will give you rest. |
+| I don’t know / Skip for now | Psalm 46:1 | God is our refuge and strength, a very present help in trouble. |
+
+- **I don’t know** and **Skip for now** share a verse but remain distinct responses: skipping records no mood.
+- Use Psalm 46:1 (KJV) as the fallback if a mood’s verse cannot be loaded.
+- Begin with one verse per mood. Additional reviewed verses can be added to each collection later.
+- These mappings provide encouragement; they do not diagnose a mood or promise a particular outcome.
+
+#### Scripture verification sources
+
+- Happy: [Psalm 118:24 (KJV)](https://www.biblegateway.com/passage/?search=Psalm%20118%3A24&version=KJV)
+- Peaceful: [Psalm 29:11 (KJV)](https://www.biblegateway.com/passage/?search=Psalm%2029%3A11&version=KJV)
+- Okay: [Psalm 121:2 (KJV)](https://www.biblegateway.com/passage/?search=Psalm%20121%3A2&version=KJV)
+- Sad: [Psalm 34:18 (KJV)](https://www.biblegateway.com/passage/?search=Psalm%2034%3A18&version=KJV)
+- Anxious: [Psalm 56:3 (KJV)](https://www.biblegateway.com/passage/?search=Psalm%2056%3A3&version=KJV)
+- Overwhelmed: [Matthew 11:28 (KJV)](https://www.biblegateway.com/passage/?search=Matthew%2011%3A28&version=KJV)
+- I don’t know / Skip for now: [Psalm 46:1 (KJV)](https://www.biblegateway.com/passage/?search=Psalm%2046%3A1&version=KJV)
 
 Returning to the mood screen and submitting a different selection updates the verse. Keep the displayed verse stable while the user remains on that screen.
 
