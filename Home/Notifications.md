@@ -1,6 +1,6 @@
 # Notifications and Reminders
 
-The Notifications screen is still being finished in Figma (the current frames use placeholder rows). This doc defines the behavior and copy.
+The Notifications screen UX design is complete. This document defines the behavior, copy, device appearance, and permission states.
 
 ## Home bell
 
@@ -52,6 +52,62 @@ The Updates tab keeps the last **30 days**. Older items are deleted automaticall
 - Never include journal or prayer text.
 - Android channels: Reminders, Stories.
 
+## Device notification appearance
+
+- Use the standard Android and iOS system notification layouts and system text styling; no custom font.
+- Use the Stay Positive logo for app identity. Android uses a suitable monochrome small notification icon derived from the logo; iOS uses the app icon.
+- Content consists of the title and body only. No attached images or action buttons.
+- Tapping opens the destination in the Destinations table.
+- Device mockups are illustrative; appearance varies by operating-system version, device, and user settings.
+
+## Notification permission invitation
+
+Device notification permission is separate from personalization consent. Enabling notifications must not enable personalization.
+
+### Copy
+
+**A gentle reminder for your day**
+
+Would you like Stay Positive to remind you to take a moment for your heart?
+
+**Enable notifications**
+
+Maybe later
+
+### Timing and behavior
+
+- New users: offer the invitation at the end of onboarding, after the first mood check-in and verse experience, before Home. It is a separate optional step; skipping it still finishes onboarding.
+- Existing users: offer it when they first open the updated Reminders tab, if notification permission has not been requested.
+- Users with notifications already enabled do not see the invitation.
+- Show the automatic invitation once per installation and remember dismissal. Users can still enable notifications through Reminders.
+- **Enable notifications** requests native permission when the OS permits a request. Android and iOS supply the device permission popup.
+- **Maybe later** dismisses the invitation without requesting permission or blocking app access.
+- If permission was denied and a native request is unavailable, use **Open Settings** instead of attempting another popup.
+- Reminder defaults represent saved preferences; they do not grant device permission.
+
+## Notifications disabled state
+
+When device settings prevent app notifications, show a banner at the top of the Reminders tab.
+
+### Copy
+
+**Notifications are turned off**
+
+Enable notifications in your device settings to receive reminders.
+
+**Open Settings**
+
+Your reminder preferences are saved.
+
+### Behavior
+
+- **Open Settings** opens the app's device notification settings, or app settings if a direct notification-settings destination is unavailable.
+- If permission has not been requested and a native request remains available, provide the invitation/enable action so users can grant permission in the app.
+- Recheck authorization when returning from Settings and when opening Reminders. Remove the banner when notifications are enabled.
+- Keep reminder switches and times saved and editable while device notifications are disabled.
+- Clearly indicate that reminders cannot be delivered until device notifications are enabled.
+- The Updates tab remains available.
+
 ## Copy
 
 Titles under ~40 characters, bodies under ~90.
@@ -93,3 +149,8 @@ reminder_toggled          { reminder, enabled }
 reminder_time_changed     { reminder }
 push_sent / push_opened   { type }
 ```
+
+## Implementation issues
+
+- [Kotlin Notifications screen #413](https://github.com/Stay-Positive-Organization/Stay-Positive-Kotlin-App/issues/413)
+- [iOS Notifications screen #52](https://github.com/Stay-Positive-Organization/StayPositive-IOS/issues/52)
