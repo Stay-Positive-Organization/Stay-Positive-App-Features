@@ -36,7 +36,7 @@ Each row: icon, label, description, time chip (disabled when off), switch. Foote
 
 ## Who gets what
 
-Free and Premium get the same notifications. The only difference is the daily reminder copy: Premium users who consented get the check-in nudge for their personal pick; Free users get Today's Verse.
+Free and Premium get the same notifications. The only difference is the daily reminder copy: Free users and Premium users without personalization consent get Today's Verse. Premium users with personalization consent get the check-in nudge for their personal pick.
 
 ## Updates history
 
@@ -60,8 +60,8 @@ Titles under ~40 characters, bodies under ~90.
 
 | Case | Title | Body |
 |---|---|---|
-| Free, or Premium not checked in | Today's verse | "{verse}" {reference} |
-| Premium, nudge to check in | How is your heart today? | Check in to see what's chosen for you. |
+| Free, or Premium without personalization consent | Today's verse | "{verse}" {reference} |
+| Premium with personalization consent | How is your heart today? | Check in to see what's chosen for you. |
 
 Personalized content depends on a check-in, so the morning notification can't name a pick before the user checks in.
 
