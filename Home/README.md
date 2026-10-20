@@ -20,6 +20,7 @@ The main reference for the Stay Positive Home screen: what it contains, in what 
 
 | Document | Covers |
 |---|---|
+| [kindness-bingo.md](kindness-bingo.md) | Kindness Bingo: 25 activities, saved progress, winning lines, celebration, and sharing |
 | [design-tokens.md](design-tokens.md) | Colors, type, spacing, icons, dark mode, contrast |
 | [mood-check-in.md](mood-check-in.md) | "How is your heart today?" check-in |
 | [daily-content-module.md](daily-content-module.md) | Today's Verse and For your heart today (five pick types, Phase 1 rules) |
