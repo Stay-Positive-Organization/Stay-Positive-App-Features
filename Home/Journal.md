@@ -24,6 +24,12 @@ Same editor as journaling from the Home card, without the "For your heart today"
 
 Full text with date, time and mood. Overflow menu: Edit, Delete. Any entry can be edited, including entries from earlier days; edits keep the original date. Delete confirms in a bottom sheet: "Delete this entry?" / "It will be removed from your journal and can't be recovered." [Delete entry] [Keep it].
 
+## Guided gratitude journey
+
+The Journaling screen also includes **30 Days of Gratitude**, a guided journey with 30 prompts, private saved reflections, and persistent completion progress. See the [30 Days of Gratitude specification](../Journaling/30-days-of-gratitude.md) for the entry card, overview, editor behavior, exact prompts, and acceptance criteria.
+
+The no-prompts editor behavior above applies to regular free-writing. Gratitude entries display their assigned prompt while reusing the same journal storage, privacy, and editing behavior.
+
 ## Privacy
 
 - Entries are readable only by their owner (Firestore security rules).
