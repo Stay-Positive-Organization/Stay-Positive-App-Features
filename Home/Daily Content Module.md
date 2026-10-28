@@ -23,7 +23,7 @@ Visual details are in Figma.
 
 Verse, reference in `goldOnForest`, button "Read full chapter ›", sprig illustration on the right. Opening it counts as streak activity.
 
-See [Today's Verse — catalog and rotation](todays-verse.md) for the default verse before check-in, shuffled verse pools, mood-specific lists, fallback and consent rules. The general default rotates morning/evening and is never described as chosen for the user. Catalog population is awaiting Eve's supplied lists. Existing Free/Premium card eligibility remains as shown above.
+See [Today's Verse — catalog and rotation](todays-verse.md) for the default verse before check-in, shuffled verse pools, mood-specific lists, fallback and consent rules. The general default rotates morning/evening and is never described as chosen for the user. The initial catalog contains 30 default selections and 10 selections per Home mood; retrieve and validate exact NIV text from the app's authorized Bible source. Existing Free/Premium card eligibility remains as shown above.
 
 **Read full chapter** opens the existing in-app Bible reader at the verse's chapter, scrolled to and highlighting the verse. The prayer end screen uses the same reader.
 
