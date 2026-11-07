@@ -239,6 +239,37 @@ Approved draft (Nov 2026), shown behind the **Program terms** link. Needs legal 
 >
 > **Questions?** Contact us at hello@staypositiveapp.com.
 
+## Routing, attribution and entitlements (approved Nov 2026)
+Based on the current Android app and Cloud Functions.
+
+Current state:
+- Verified App Links already exist on `https://staypositive.app` (`/story/` on `StoryDetailActivity`).
+- Firebase Dynamic Links was shut down by Google in August 2025; do not use it.
+- The app does not yet include the Play Install Referrer library.
+- Premium comes only from billing: `BillingManager` sets `isPremium`, and `googlePlayWebhook` writes `isPremium: false` on expiry or revocation.
+- Existing functions are HTTP `onRequest` endpoints; the app already uses App Check with Play Integrity.
+
+### Links
+- Invite link: `https://staypositive.app/invite/{code}`, added to the verified App Link intent filter.
+- **App installed:** the link opens the in-app invitation (screen B); the code is held until sign-up.
+- **App not installed:** the link opens the web invitation page (screen A). Its Play button links to `https://play.google.com/store/apps/details?id=com.app.staypositive&referrer=ref%3D{code}`.
+- **First launch after install:** read the Play Install Referrer once and prefill the sign-up code. Manual code entry is always available as the fallback.
+
+### Separate referral entitlement
+- Store `referralPremiumUntil` (server time) on the user in Firestore, separate from paid `isPremium`.
+- The app treats a user as Premium when paid `isPremium` is true **or** `referralPremiumUntil` is in the future.
+- `googlePlayWebhook`, `verifySubscription`, `restoreSubscription` and client purchase restore never change `referralPremiumUntil`.
+
+### Server-side rules
+Callable Cloud Functions, requiring Firebase Auth and App Check:
+- `applyReferralCode`: validates a code at sign-up; returns the inviter's first name or an error reason (invalid, expired, own_code).
+- `qualifyReferral`: runs once when the account is created. Checks the new-account rule, 30-day window, cap of three, and both people's paid or trial status, then grants rewards. Idempotent: repeat calls never grant twice.
+- `referrals` collection: one audit record per friend (inviter, friend, status, timestamps), written only by the server.
+- Codes are random and non-identifying; each inviter keeps one code.
+
+### Tests
+Link install vs. Play Store install, manual code entry, retried or duplicate `qualifyReferral`, offline at sign-up, webhook expiring a paid plan while referral days remain, and purchase restore.
+
 ## Developer handoff scope
 After the rules and UX are ready, create separate tasks for:
 1. Android referral screen, sharing, code entry, routing and onboarding integration.
