@@ -199,6 +199,46 @@ What the inviter sees (decided by Evelise):
 
 Match Stay Positive colors and typography. Support text scaling, screen readers, clear selected/focus states and accessible touch targets.
 
+## Program terms (user-facing)
+Approved draft (Nov 2026), shown behind the **Program terms** link. Needs legal review before launch.
+
+> **Stay Positive Referral Program: Terms**
+> *Last updated: [launch date]*
+>
+> **How it works**
+> Share your personal invite link or code. When a friend creates a new Stay Positive account using it, you each receive 30 days of Premium.
+>
+> **Who can take part**
+> - Anyone with a Stay Positive account can invite friends.
+> - Your friend must create a **new** account and apply your link or code during sign-up. Codes entered after an account already exists can't be used.
+> - Your friend must create their account within **30 days** of opening your invitation.
+> - You can't use your own code.
+>
+> **Rewards**
+> - **Your friend:** 30 days of Premium, once per new account.
+> - **You:** 30 days of Premium for each friend who joins, up to **3 friends** (90 days in total).
+> - If you earn more than one reward, the days are added one after another.
+> - During this program, inviter rewards are for members without an active paid subscription. If you're a paying Premium member, your friends still receive their 30 days.
+> - If your friend already has an active free trial or paid subscription when they join, they won't receive the referral reward, but you still will.
+>
+> **About your free Premium**
+> - No payment details are needed, and nothing renews automatically.
+> - When your free Premium ends, your account returns to its previous plan. Your journal entries, favorites and saved content are always kept.
+> - Rewards have no cash value and can't be transferred or exchanged.
+>
+> **Your privacy**
+> - The person who invited you will see your first name or display name and that you joined.
+> - They will **never** see your moods, journal entries, activity or purchases.
+> - Taking part doesn't turn on notifications or personalization; those remain your choice.
+>
+> **Fair use**
+> We may withhold or remove rewards gained through duplicate or fake accounts, self-referrals, or other misuse.
+>
+> **Changes**
+> We may change or end this program at any time. Rewards already granted will be honored.
+>
+> **Questions?** Contact us at hello@staypositiveapp.com.
+
 ## Developer handoff scope
 After the rules and UX are ready, create separate tasks for:
 1. Android referral screen, sharing, code entry, routing and onboarding integration.
@@ -225,7 +265,8 @@ Track referral screen views, share action initiated, invitation landing, referra
 - [x] Main referral screen copy (approved Nov 2026).
 - [x] Invited friend's journey copy (approved Nov 2026).
 - [x] Inviter confirmation, prompts, expiry and error copy (approved Nov 2026).
-- [ ] Write program terms.
+- [x] Program terms drafted and approved (Nov 2026).
+- [ ] Legal review of program terms before launch.
 - [ ] Complete Figma designs and link them here.
 - [ ] Create implementation subtasks and determine rollout.
 
