@@ -15,7 +15,7 @@ Help people introduce someone they care about to Stay Positive and experience Pr
 ## Reward direction and proposed starting offer
 Evelise supports offering free Premium access as a referral reward.
 
-**Pilot offer (decided by Evelise): give 30 days of Premium to the invited friend and 30 days to the inviter after the friend qualifies.** Eligibility, limits and paid-subscriber treatment below are proposals to refine during UX/product work, not final launch terms.
+**Pilot offer (decided by Evelise): give 30 days of Premium to the invited friend and 30 days to the inviter after the friend qualifies.** Decided rules are marked below; anything still marked proposed is open for refinement during UX/product work.
 
 Thirty days gives both people enough time to use Premium as part of a routine, not just sample it. Because the reward is larger, the cap, redemption window and misuse protections below matter more. Whether it improves activation, retention or conversion remains a hypothesis to measure. Do not describe the program as proven growth.
 
@@ -27,7 +27,8 @@ Thirty days gives both people enough time to use Premium as part of a routine, n
 **Qualifying action (decided by Evelise): account creation.** A referral qualifies when an eligible new account is created with the referral applied; no check-in or other in-app activity is required. Because this is a low bar for a 30-day reward, the one-reward-per-account rule, inviter cap and duplicate/self-referral protections are what limit misuse. The inviter never sees the friend's moods or other activity.
 
 ## Proposed pilot rules
-- Free users can invite friends. Premium subscribers may also invite, but reward handling for active paid subscriptions must be resolved before including them in reward eligibility.
+- Who can invite (decided by Evelise): everyone, Free and paid Premium. In the pilot, only inviters without an active paid subscription earn the inviter reward. A paid subscriber's invited friends still receive their 30 days.
+- Inviter eligibility is checked when the friend qualifies. A referral that qualifies while the inviter has an active paid subscription earns no inviter reward and does not use one of their three reward slots.
 - A qualifying friend is a new Stay Positive account with one valid referral applied during sign-up, before the account is created. A code entered after account creation does not qualify. Existing accounts cannot claim a new-user reward.
 - Sharing, clicking a link or installing alone does not earn a reward.
 - Invited friend reward: one 30-day grant per eligible new account.
@@ -43,7 +44,7 @@ Thirty days gives both people enough time to use Premium as part of a routine, n
 ## Access timing and existing subscriptions
 For a Free user, proposed reward access starts when the referral qualifies. If another referral reward is already active, append days after its expiry rather than running overlapping grants.
 
-An active paid subscription must not be silently paused, canceled, discounted or described as extended. Define a compatible way to deliver an equivalent benefit to paid subscribers before enabling their reward claims. Possible approaches to evaluate include a deferred complimentary-access grant after paid access ends or a supported subscription offer. This is an open product/engineering decision; do not promise a billing credit.
+An active paid subscription must not be silently paused, canceled, discounted or described as extended. For the pilot, paid subscribers do not receive an inviter reward (see rules above). A paid-subscriber reward, such as a deferred complimentary-access grant after paid access ends or a supported Google Play subscription offer, can be considered after the pilot. Do not promise a billing credit.
 
 Also resolve interactions with existing trials/promotions, restoring purchases, refunds, account changes and platform changes. Referral access should follow the same account entitlement across supported devices without duplicating rewards.
 
@@ -83,7 +84,7 @@ Use aggregate counts/status without exposing friends' moods, journal text, chat,
 - Reward granted; access expired.
 - Invalid/expired code, self-referral, existing account, duplicate claim.
 - Reward cap reached, offline/save failure and program unavailable.
-- Paid-subscriber eligibility explanation once that policy is resolved.
+- Paid subscriber on the referral screen: they can share, and the screen explains that their friend gets 30 days of Premium while inviter rewards are for Free members during the pilot.
 
 Match Stay Positive colors and typography. Support text scaling, screen readers, clear selected/focus states and accessible touch targets.
 
@@ -104,7 +105,8 @@ Track referral screen views, share action initiated, invitation landing, referra
 - [x] Qualifying action: account creation (decided Nov 2026; previously proposed first check-in).
 - [x] Inviter cap: three rewarded referrals, up to 90 days (decided Nov 2026; previously proposed four).
 - [x] Redemption window: 30 days (decided Nov 2026).
-- [ ] Resolve paid subscribers, trials and promotion stacking.
+- [x] Paid subscribers: can invite; no inviter reward in the pilot; their friends still get 30 days (decided Nov 2026).
+- [ ] Resolve trials and promotion stacking.
 - [ ] Finalize rules, terms, entry point and screen copy.
 - [ ] Complete Figma designs and link them here.
 - [ ] Create implementation subtasks and determine rollout.
