@@ -87,7 +87,12 @@ Explain the 30-day reward and qualifying action before account creation.
 Draft success title: **Your 30 days of Premium are ready**
 Show exact access end date and **Explore Premium**.
 Show pending, qualified and reward-granted states as needed.
-Use aggregate counts/status without exposing friends' moods, journal text, chat, purchases or other private activity. Prefer anonymous referral rows.
+What the inviter sees (decided by Evelise):
+- **Counts and status:** for example "2 friends joined · 2 of 3 rewards earned · Premium until Dec 12".
+- **A row per friend with their first name or display name:** for example "Sarah joined · reward granted" or "Sarah joined · no reward (cap reached)".
+- The invited friend is told during sign-up, next to the referral code, that their inviter will see their first name or display name. If no name is available, the row shows "A friend".
+- Proposed, to confirm during UX: the friend can choose to show as "A friend" instead of their name.
+- The inviter never sees the friend's moods, journal text, chat, activity, purchases or any other private information.
 
 ### 4. Required UX states
 - First use with no referrals.
@@ -122,6 +127,7 @@ Track referral screen views, share action initiated, invitation landing, referra
 - [x] Entry points: sign-up code field, after sign-up/login prompt, Profile/Settings row, one contextual prompt, Home screen spot (decided Nov 2026).
 - [x] Contextual prompt moment: after finishing any activity (decided Nov 2026).
 - [x] Prompt frequency and guardrails (decided Nov 2026).
+- [x] Inviter visibility: counts and status plus each friend's first or display name, with notice at sign-up (decided Nov 2026).
 - [ ] Finalize terms and screen copy.
 - [ ] Complete Figma designs and link them here.
 - [ ] Create implementation subtasks and determine rollout.
