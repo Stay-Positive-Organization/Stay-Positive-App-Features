@@ -201,7 +201,7 @@ What the inviter sees (decided by Evelise):
 Match Stay Positive colors and typography. Support text scaling, screen readers, clear selected/focus states and accessible touch targets.
 
 ## Program terms (user-facing)
-Approved draft (Nov 2026), shown behind the **Program terms** link. Needs legal review before launch.
+Approved (Nov 2026), shown behind the **Program terms** link.
 
 > **Stay Positive Referral Program: Terms**
 > *Last updated: [launch date]*
@@ -314,7 +314,6 @@ Minimal rollout:
 4. **Turn it off** if fake-account spikes, billing errors or feature-related crashes appear. Rewards already granted are honored, as the terms say.
 
 Before launch:
-- Legal review of the program terms.
 - Update the privacy policy: inviters see friends' first names, and the app reads install referrer data.
 - Check whether the Play Console Data safety form needs updating.
 - Confirm the analytics events in GA4 DebugView.
@@ -334,7 +333,6 @@ Before launch:
 - [x] Invited friend's journey copy (approved Nov 2026).
 - [x] Inviter confirmation, prompts, expiry and error copy (approved Nov 2026).
 - [x] Program terms drafted and approved (Nov 2026).
-- [ ] Legal review of program terms before launch.
 - [ ] Complete Figma designs and link them here.
 - [x] Implementation tasks created (Nov 2026): FE-21 #496 / BE-10 #497, FE-22 #498 / BE-11 #499, FE-23 #500 / BE-12 #501, FE-24 #502 / BE-13 #503 in Stay-Positive-Kotlin-App.
 - [x] Rollout: minimal (program off → one real end-to-end test → launch), decided Nov 2026.
