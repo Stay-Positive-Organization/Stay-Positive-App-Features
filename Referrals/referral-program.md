@@ -112,7 +112,7 @@ Notes:
 ### 2. Friend invitation and acceptance
 Final copy (approved by Evelise, Nov 2026). Text in `[brackets]` is filled in by the app.
 
-**A. Invitation web page** (link opened without the app installed)
+**A. Invitation web page** (parked for the pilot; the link redirects to the Play Store instead. Keep this copy for a later page.)
 - Heading: **A little encouragement, shared with you**
 - Body: **[Sarah] invited you to Stay Positive. Create your account within 30 days and you'll both get 30 days of Premium.**
 - Button: **Get it on Google Play**
@@ -252,7 +252,7 @@ Current state:
 ### Links
 - Invite link: `https://staypositive.app/invite/{code}`, added to the verified App Link intent filter.
 - **App installed:** the link opens the in-app invitation (screen B); the code is held until sign-up.
-- **App not installed:** the link opens the web invitation page (screen A). Its Play button links to `https://play.google.com/store/apps/details?id=com.app.staypositive&referrer=ref%3D{code}`.
+- **App not installed (decided by Evelise):** `staypositive.app/invite/{code}` redirects straight to `https://play.google.com/store/apps/details?id=com.app.staypositive&referrer=ref%3D{code}`. No web invitation page in the pilot; a page can replace the redirect later without changing shared links.
 - **First launch after install:** read the Play Install Referrer once and prefill the sign-up code. Manual code entry is always available as the fallback.
 
 ### Separate referral entitlement
@@ -274,7 +274,7 @@ Link install vs. Play Store install, manual code entry, retried or duplicate `qu
 After the rules and UX are ready, create separate tasks for:
 1. Android referral screen, sharing, code entry, routing and onboarding integration.
 2. Backend attribution, eligibility, qualification, one-time reward grants, account entitlements and expiry.
-3. Invitation web fallback and app/store routing; coordinate iOS when ready.
+3. Invite link redirect to the Play Store and App Link routing (folded into the backend friend-journey ticket); coordinate iOS when ready.
 4. Tests for retries, offline recovery, repeated links, duplicate qualification and purchase/reward interactions.
 
 Use server-side eligibility and reward calculations; never rely on client-only counters. Keep an auditable grant record and make repeated qualification requests idempotent. Use non-identifying random referral codes.
@@ -289,7 +289,7 @@ Analytics events (approved by Evelise, Nov 2026), Firebase Analytics naming:
 | `referral_prompt_dismissed` | Not now, Don't show again, or ✕ on the Home card | `entry_point`, `action` |
 | `referral_screen_view` | The main referral screen opens | `inviter_status` (free, paid, cap_reached) |
 | `referral_share_tapped` | Invite a friend or Copy link is tapped | `method` (share_sheet, copy_link) |
-| `referral_invite_landing` | The web page or in-app invitation opens | `surface` (web, app) |
+| `referral_invite_landing` | The redirect is hit or the in-app invitation opens | `surface` (redirect, app) |
 | `referral_code_applied` | A valid code is applied at sign-up | `source` (link, manual) |
 | `referral_code_error` | A code is rejected | `reason` (invalid, expired, own_code, existing_account) |
 | `referral_qualified` | The friend's account is created (server-side) | none |
