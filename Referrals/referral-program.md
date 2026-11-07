@@ -157,6 +157,7 @@ Final copy (approved by Evelise, Nov 2026). Text in `[brackets]` is filled in by
 - Body: **You've earned 30 days of Premium. You now have Premium until [Jan 6, 2027].**
 - Button: **Explore Premium** · Text link: **Invite another friend**
 - Cap reached or paid subscriber: **[Sarah] joined Stay Positive! Thank you for sharing. They now have 30 days of Premium.**
+- Several friends joined since the last visit: one screen titled **[Sarah] and [1] other friend joined Stay Positive!** (plural: **[2] other friends**), naming the most recent friend.
 
 **G. Prompt after sign-up/login** (bottom sheet, shown once)
 - Title: **Know someone who'd love this?**
