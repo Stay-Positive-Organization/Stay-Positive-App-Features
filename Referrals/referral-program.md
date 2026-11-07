@@ -46,7 +46,12 @@ For a Free user, proposed reward access starts when the referral qualifies. If a
 
 An active paid subscription must not be silently paused, canceled, discounted or described as extended. For the pilot, paid subscribers do not receive an inviter reward (see rules above). A paid-subscriber reward, such as a deferred complimentary-access grant after paid access ends or a supported Google Play subscription offer, can be considered after the pilot. Do not promise a billing credit.
 
-Also resolve interactions with existing trials/promotions, restoring purchases, refunds, account changes and platform changes. Referral access should follow the same account entitlement across supported devices without duplicating rewards.
+Trials and other free access (decided by Evelise):
+- If the invited friend already has an active free trial or paid subscription when the referral qualifies, the friend receives no referral reward. Referral days are never stacked on top of a Play trial.
+- Proposed, to confirm: the inviter's reward is unaffected, because the friend still created an eligible new account.
+- A Free member's referral rewards run back to back (three friends gives up to 90 consecutive days).
+
+Still to resolve with engineering: restoring purchases, refunds, account changes and platform changes. Referral access should follow the same account entitlement across supported devices without duplicating rewards.
 
 ## Entry points and screens
 Entry points (decided by Evelise):
@@ -123,7 +128,7 @@ Track referral screen views, share action initiated, invitation landing, referra
 - [x] Inviter cap: three rewarded referrals, up to 90 days (decided Nov 2026; previously proposed four).
 - [x] Redemption window: 30 days (decided Nov 2026).
 - [x] Paid subscribers: can invite; no inviter reward in the pilot; their friends still get 30 days (decided Nov 2026).
-- [ ] Resolve trials and promotion stacking.
+- [x] Trials and stacking: no friend reward if a trial or paid subscription is already active; inviter rewards run back to back (decided Nov 2026).
 - [x] Entry points: sign-up code field, after sign-up/login prompt, Profile/Settings row, one contextual prompt, Home screen spot (decided Nov 2026).
 - [x] Contextual prompt moment: after finishing any activity (decided Nov 2026).
 - [x] Prompt frequency and guardrails (decided Nov 2026).
