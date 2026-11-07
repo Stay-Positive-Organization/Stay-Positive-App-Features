@@ -48,7 +48,7 @@ An active paid subscription must not be silently paused, canceled, discounted or
 
 Trials and other free access (decided by Evelise):
 - If the invited friend already has an active free trial or paid subscription when the referral qualifies, the friend receives no referral reward. Referral days are never stacked on top of a Play trial.
-- Proposed, to confirm: the inviter's reward is unaffected, because the friend still created an eligible new account.
+- The inviter's reward is unaffected, because the friend still created an eligible new account (decided by Evelise).
 - A Free member's referral rewards run back to back (three friends gives up to 90 consecutive days).
 
 Still to resolve with engineering: restoring purchases, refunds, account changes and platform changes. Referral access should follow the same account entitlement across supported devices without duplicating rewards.
@@ -110,14 +110,44 @@ Notes:
 - No faith language on this screen, so the share message works for any friend.
 
 ### 2. Friend invitation and acceptance
-Draft heading: **A little encouragement, shared with you**
-Explain the 30-day reward and qualifying action before account creation.
-- Link with app installed: open the referral acceptance route.
-- Link without the app: show an invitation page with the correct available store destination and a visible code to enter after installation.
-- Do not assume referral attribution survives a store install; define and test the link/code handoff. Provide manual code entry as fallback.
-- Confirm an applied referral visibly; an invalid code must not prevent ordinary onboarding.
+Final copy (approved by Evelise, Nov 2026). Text in `[brackets]` is filled in by the app.
+
+**A. Invitation web page** (link opened without the app installed)
+- Heading: **A little encouragement, shared with you**
+- Body: **[Sarah] invited you to Stay Positive. Create your account within 30 days and you'll both get 30 days of Premium.**
+- Button: **Get it on Google Play**
+- Code box: **Your invite code: [SP-7K4Q]** with a **Copy** button
+- Helper line: **If the code doesn't appear when you sign up, enter it on the "Have a referral code?" step.**
+- The page shows the inviter's first name to anyone with the link; it shows nothing else about them.
+
+**B. In-app invitation** (app installed and link opened, before sign-up)
+- Heading: **A little encouragement, shared with you**
+- Body: **[Sarah] invited you. Create your account and you'll both get 30 days of Premium. No payment details needed.**
+- Button: **Create my account**
+- Text link: **I already have an account**
+
+**C. Sign-up: "Have a referral code?"**
+- Field label: **Referral code (optional)**, prefilled when the link carried the code
+- Applied: **✓ Code applied. You'll get 30 days of Premium when your account is created.**
+- Name notice under the applied code: **[Sarah] will see your first name when you join.**
+- Errors never block sign-up:
+  - Invalid: **We couldn't find that code. Check it and try again, or continue without one.**
+  - Expired: **This invitation has expired. You can still create your account.**
+  - Own code: **This is your own invite code. Share it with a friend instead.**
+
+**D. Existing account opens a link**
+- **You already have an account, so this invitation can't be used. Want to share Stay Positive yourself?** Button: **Invite a friend**
+
+**E. Friend's reward confirmation** (after onboarding finishes)
+- Title: **Your 30 days of Premium are ready**
+- Body: **Thanks to [Sarah], you have Premium until [Dec 7, 2026]. Nothing renews and no payment is needed.**
+- Button: **Explore Premium**
+- Friend already had a trial or paid subscription: **Welcome! Your current plan stays as it is, and [Sarah] has been thanked for inviting you.**
+
+Implementation notes:
+- Do not assume referral attribution survives a store install; define and test the link/code handoff. Manual code entry is the fallback.
 - Apply the referral before account creation, then continue the existing onboarding flow unchanged.
-- Record qualification once when the account is created; show the friend's reward confirmation once onboarding allows it.
+- Record qualification once when the account is created.
 
 ### 3. Progress and reward confirmation
 Draft success title: **Your 30 days of Premium are ready**
@@ -165,6 +195,7 @@ Track referral screen views, share action initiated, invitation landing, referra
 - [x] Prompt frequency and guardrails (decided Nov 2026).
 - [x] Inviter visibility: counts and status plus each friend's first or display name, with notice at sign-up (decided Nov 2026).
 - [x] Main referral screen copy (approved Nov 2026).
+- [x] Invited friend's journey copy (approved Nov 2026).
 - [ ] Finalize remaining screen copy and program terms.
 - [ ] Complete Figma designs and link them here.
 - [ ] Create implementation subtasks and determine rollout.
