@@ -323,7 +323,8 @@ Never sent: names, codes, moods, journal content, or any friend's identity. Rewa
 - [x] Program terms drafted and approved (Nov 2026).
 - [ ] Legal review of program terms before launch.
 - [ ] Complete Figma designs and link them here.
-- [ ] Create implementation subtasks and determine rollout.
+- [x] Implementation tasks created (Nov 2026): FE-21 #496 / BE-10 #497, FE-22 #498 / BE-11 #499, FE-23 #500 / BE-12 #501, FE-24 #502 / BE-13 #503 in Stay-Positive-Kotlin-App.
+- [ ] Determine rollout.
 
 ## Acceptance criteria for the future implementation
 - [ ] Terms and reward eligibility are visible before participation.
