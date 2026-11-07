@@ -57,7 +57,11 @@ Entry points (decided by Evelise):
 4. **One prompt after finishing an activity.** A contextual invite shown after completing any activity, such as a meditation, the Reset flow, affirmations, a journal entry or a 30 Days of Gratitude day (decided by Evelise). It appears after the activity's own completion screen, never during the activity, and never covers the user's content.
 5. **Home screen spot.** A card or banner that opens the main referral screen.
 
-Proposed guardrails, to confirm during UX: every prompt and the Home spot can be dismissed; show at most one invite prompt per session; the after-login prompt does not appear on every login; hide prompts when the inviter has no rewards left and is not a paid subscriber, or when the program is unavailable.
+Prompt frequency (decided by Evelise):
+- **Activity prompt:** at most once every 7 days, with **Not now** and **Don't show again**.
+- **After-login prompt:** once only, on the first login after the feature launches, and on a new user's first sign-up.
+- **Home screen spot:** stays until dismissed; after dismissal it returns only when something changes, such as a friend joining.
+- **Across all prompts:** at most one invite prompt per session. Stop prompting once a Free member has used all three rewards; paid subscribers can still be prompted because their friends still receive 30 days. Hide all prompts while the program is unavailable. The Profile/Settings row is always available.
 
 ### 1. Main referral screen
 Draft copy, conditional on final offer:
@@ -117,7 +121,7 @@ Track referral screen views, share action initiated, invitation landing, referra
 - [ ] Resolve trials and promotion stacking.
 - [x] Entry points: sign-up code field, after sign-up/login prompt, Profile/Settings row, one contextual prompt, Home screen spot (decided Nov 2026).
 - [x] Contextual prompt moment: after finishing any activity (decided Nov 2026).
-- [ ] Confirm prompt frequency and guardrails.
+- [x] Prompt frequency and guardrails (decided Nov 2026).
 - [ ] Finalize terms and screen copy.
 - [ ] Complete Figma designs and link them here.
 - [ ] Create implementation subtasks and determine rollout.
