@@ -249,7 +249,30 @@ After the rules and UX are ready, create separate tasks for:
 Use server-side eligibility and reward calculations; never rely on client-only counters. Keep an auditable grant record and make repeated qualification requests idempotent. Use non-identifying random referral codes.
 
 ## Measurement
-Track referral screen views, share action initiated, invitation landing, referral applied, qualification, reward granted/expired and subsequent Premium purchase. Measure referred-user activation and retention, plus reward cost and misuse, before expanding the offer. Do not send mood values or private content in referral analytics.
+Analytics events (approved by Evelise, Nov 2026), Firebase Analytics naming:
+
+| Event | When it fires | Parameters |
+|---|---|---|
+| `referral_entry_point_shown` | A prompt or the Home card is displayed | `entry_point` (signup_login, activity, home_card) |
+| `referral_entry_point_tapped` | The user opens the referral screen from any entry point | `entry_point` (adds settings_row) |
+| `referral_prompt_dismissed` | Not now, Don't show again, or ✕ on the Home card | `entry_point`, `action` |
+| `referral_screen_view` | The main referral screen opens | `inviter_status` (free, paid, cap_reached) |
+| `referral_share_tapped` | Invite a friend or Copy link is tapped | `method` (share_sheet, copy_link) |
+| `referral_invite_landing` | The web page or in-app invitation opens | `surface` (web, app) |
+| `referral_code_applied` | A valid code is applied at sign-up | `source` (link, manual) |
+| `referral_code_error` | A code is rejected | `reason` (invalid, expired, own_code, existing_account) |
+| `referral_qualified` | The friend's account is created (server-side) | none |
+| `referral_reward_granted` | A reward is granted (server-side) | `recipient` (friend, inviter) |
+| `referral_reward_expired` | Referral Premium ends (server-side) | `recipient` |
+| `premium_purchase` | Existing event, plus a referral flag | `had_referral_reward` (true/false) |
+
+What to watch in the pilot:
+- **Funnel:** referral screen views → shares → invite landings → codes applied → accounts created.
+- **Value:** how many referred friends and inviters buy Premium after their 30 days end.
+- **Cost:** total free Premium days granted.
+- **Abuse:** code errors by reason, and spikes in accounts per inviter.
+
+Never sent: names, codes, moods, journal content, or any friend's identity. Rewards and qualification are counted server-side; a share tap is never counted as a referral.
 
 ## Decisions to finalize with Evelise
 - [x] Confirm reward length: 30 days for both people (decided Nov 2026; previously proposed 7).
