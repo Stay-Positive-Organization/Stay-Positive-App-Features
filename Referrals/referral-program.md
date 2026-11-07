@@ -69,14 +69,45 @@ Prompt frequency (decided by Evelise):
 - **Across all prompts:** at most one invite prompt per session. Stop prompting once a Free member has used all three rewards; paid subscribers can still be prompted because their friends still receive 30 days. Hide all prompts while the program is unavailable. The Profile/Settings row is always available.
 
 ### 1. Main referral screen
-Draft copy, conditional on final offer:
+Final copy (approved by Evelise, Nov 2026). Text in `[brackets]` is filled in by the app.
+
+**Header**
 - Title: **Share a little encouragement**
-- Supporting line: **Invite a friend to Stay Positive. When they create their account, you both get 30 days of Premium.**
-- Personal link/code with **Copy link** and **Invite a friend** actions.
-- Brief "How it works": share your link → friend creates an account → both receive Premium.
-- Reward summary: earned days, active access end date and remaining referral eligibility.
-- Program terms link with eligibility, reward cap and expiry details.
-- Avoid contact uploads or automatic invitations; open the native share sheet so the person chooses whom to invite.
+- Subtitle: **Invite a friend to Stay Positive. When they create their account, you each get 30 days of Premium.**
+
+**Your invite**
+- Label: **Your invite code**
+- Code: `[SP-7K4Q]` (non-identifying random code)
+- Primary button: **Invite a friend**, which opens the native share sheet
+- Secondary button: **Copy link**, which shows the toast **Link copied**
+
+**Share message** (prefilled in the share sheet)
+> I've been using Stay Positive for daily encouragement and thought of you. Join with my link and we'll both get 30 days of Premium: [link]
+> Or enter my code when you sign up: [SP-7K4Q]
+
+**How it works**
+1. **Share your link** with someone you care about.
+2. **They create an account** within 30 days using your link or code.
+3. **You both get 30 days of Premium.**
+
+**Your rewards** (card content by state)
+- No referrals yet: **No friends have joined yet. You can earn up to 3 rewards.**
+- Some earned: **[2] of 3 rewards earned · Premium until [Dec 12, 2026]**
+- All used: **You've earned all 3 rewards. Thank you for sharing! Friends who join still get 30 days of Premium.**
+- Paid subscriber: **You're already a Premium member. Friends who join with your link still get 30 days of Premium.**
+
+**Friends** (shown only once someone has joined)
+- **[Sarah] joined · 30 days added**
+- **[A friend] joined · Reward pending**
+- **[Sarah] joined · Thanks for sharing** (friend joined after the cap was reached, or while the inviter was a paid subscriber)
+
+**Footer**
+- Link: **Program terms**
+
+Notes:
+- Avoid contact uploads or automatic invitations; the native share sheet lets the person choose whom to invite.
+- Rows never say "no reward"; "Thanks for sharing" keeps a non-rewarded referral from reading as a loss.
+- No faith language on this screen, so the share message works for any friend.
 
 ### 2. Friend invitation and acceptance
 Draft heading: **A little encouragement, shared with you**
@@ -133,7 +164,8 @@ Track referral screen views, share action initiated, invitation landing, referra
 - [x] Contextual prompt moment: after finishing any activity (decided Nov 2026).
 - [x] Prompt frequency and guardrails (decided Nov 2026).
 - [x] Inviter visibility: counts and status plus each friend's first or display name, with notice at sign-up (decided Nov 2026).
-- [ ] Finalize terms and screen copy.
+- [x] Main referral screen copy (approved Nov 2026).
+- [ ] Finalize remaining screen copy and program terms.
 - [ ] Complete Figma designs and link them here.
 - [ ] Create implementation subtasks and determine rollout.
 
