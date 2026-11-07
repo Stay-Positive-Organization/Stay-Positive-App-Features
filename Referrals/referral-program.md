@@ -3,7 +3,7 @@
 **Status:** Product proposal for UX design; not implemented or scheduled.
 **Owner:** Evelise (@evydsg).
 **Planning task:** [Android #493](https://github.com/Stay-Positive-Organization/Stay-Positive-Kotlin-App/issues/493).
-**Figma:** To be added by Evelise.
+**Figma:** [Referral Program section](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3064-2).
 
 ## Purpose and user stories
 Help people introduce someone they care about to Stay Positive and experience Premium together.
@@ -333,7 +333,7 @@ Before launch:
 - [x] Invited friend's journey copy (approved Nov 2026).
 - [x] Inviter confirmation, prompts, expiry and error copy (approved Nov 2026).
 - [x] Program terms drafted and approved (Nov 2026).
-- [ ] Complete Figma designs and link them here.
+- [x] Figma designs complete (Nov 2026): [Referral Program section](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3064-2).
 - [x] Implementation tasks created (Nov 2026): FE-21 #496 / BE-10 #497, FE-22 #498 / BE-11 #499, FE-23 #500 / BE-12 #501, FE-24 #502 / BE-13 #503 in Stay-Positive-Kotlin-App.
 - [x] Rollout: minimal (program off → one real end-to-end test → launch), decided Nov 2026.
 - [ ] Privacy policy and Data safety review before launch.
