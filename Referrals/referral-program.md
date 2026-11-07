@@ -31,7 +31,7 @@ Thirty days gives both people enough time to use Premium as part of a routine, n
 - A qualifying friend is a new Stay Positive account with one valid referral applied during sign-up, before the account is created. A code entered after account creation does not qualify. Existing accounts cannot claim a new-user reward.
 - Sharing, clicking a link or installing alone does not earn a reward.
 - Invited friend reward: one 30-day grant per eligible new account.
-- Inviter reward: proposed pilot cap of four qualifying friends (120 reward days total per inviter). Show remaining eligibility clearly; finalize the cap before launch.
+- Inviter reward: pilot cap of three qualifying friends (decided by Evelise), so at most 90 reward days per inviter. Show remaining eligibility clearly, for example "2 of 3 rewards left".
 - Proposed redemption window: the friend creates their account within 30 days of accepting the invitation. Finalize timing and precise expiry behavior before launch.
 - One friend can credit only one inviter; proposed rule is the first valid referral confirmed by the friend. Do not overwrite it silently.
 - Self-referrals, duplicate claims and repeated processing must not create additional grants.
@@ -102,7 +102,8 @@ Track referral screen views, share action initiated, invitation landing, referra
 ## Decisions to finalize with Evelise
 - [x] Confirm reward length: 30 days for both people (decided Nov 2026; previously proposed 7).
 - [x] Qualifying action: account creation (decided Nov 2026; previously proposed first check-in).
-- [ ] Confirm four-referral pilot cap and 30-day redemption window.
+- [x] Inviter cap: three rewarded referrals, up to 90 days (decided Nov 2026; previously proposed four).
+- [ ] Confirm 30-day redemption window.
 - [ ] Resolve paid subscribers, trials and promotion stacking.
 - [ ] Finalize rules, terms, entry point and screen copy.
 - [ ] Complete Figma designs and link them here.
