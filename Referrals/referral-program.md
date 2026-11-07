@@ -155,7 +155,7 @@ Show exact access end date and **Explore Premium**.
 Show pending, qualified and reward-granted states as needed.
 What the inviter sees (decided by Evelise):
 - **Counts and status:** for example "2 friends joined · 2 of 3 rewards earned · Premium until Dec 12".
-- **A row per friend with their first name or display name:** for example "Sarah joined · reward granted" or "Sarah joined · no reward (cap reached)".
+- **A row per friend with their first name or display name:** for example "Sarah joined · 30 days added" or "Sarah joined · Thanks for sharing" (see the main screen copy).
 - The invited friend is told during sign-up, next to the referral code, that their inviter will see their first name or display name. If no name is available, the row shows "A friend".
 - Proposed, to confirm during UX: the friend can choose to show as "A friend" instead of their name.
 - The inviter never sees the friend's moods, journal text, chat, activity, purchases or any other private information.
