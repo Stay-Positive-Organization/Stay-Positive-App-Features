@@ -306,6 +306,19 @@ What to watch in the pilot:
 
 Never sent: names, codes, moods, journal content, or any friend's identity. Rewards and qualification are counted server-side; a share tap is never counted as a referral.
 
+## Rollout (decided by Evelise, Nov 2026)
+Minimal rollout:
+1. **Ship with the program off.** Every release before launch has `config/referrals.enabled = false`, so the code reaches users without being visible.
+2. **One real end-to-end test** on the internal testing track: invite link → Play Store install → code prefilled at sign-up → both rewards granted → referral Premium expiry. Include a paid inviter, the cap and a paid plan expiring while referral days remain.
+3. **Launch** by setting `enabled = true` for everyone, with all entry points.
+4. **Turn it off** if fake-account spikes, billing errors or feature-related crashes appear. Rewards already granted are honored, as the terms say.
+
+Before launch:
+- Legal review of the program terms.
+- Update the privacy policy: inviters see friends' first names, and the app reads install referrer data.
+- Check whether the Play Console Data safety form needs updating.
+- Confirm the analytics events in GA4 DebugView.
+
 ## Decisions to finalize with Evelise
 - [x] Confirm reward length: 30 days for both people (decided Nov 2026; previously proposed 7).
 - [x] Qualifying action: account creation (decided Nov 2026; previously proposed first check-in).
@@ -324,7 +337,8 @@ Never sent: names, codes, moods, journal content, or any friend's identity. Rewa
 - [ ] Legal review of program terms before launch.
 - [ ] Complete Figma designs and link them here.
 - [x] Implementation tasks created (Nov 2026): FE-21 #496 / BE-10 #497, FE-22 #498 / BE-11 #499, FE-23 #500 / BE-12 #501, FE-24 #502 / BE-13 #503 in Stay-Positive-Kotlin-App.
-- [ ] Determine rollout.
+- [x] Rollout: minimal (program off → one real end-to-end test → launch), decided Nov 2026.
+- [ ] Privacy policy and Data safety review before launch.
 
 ## Acceptance criteria for the future implementation
 - [ ] Terms and reward eligibility are visible before participation.
