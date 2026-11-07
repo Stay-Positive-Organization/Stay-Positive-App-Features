@@ -149,10 +149,38 @@ Implementation notes:
 - Apply the referral before account creation, then continue the existing onboarding flow unchanged.
 - Record qualification once when the account is created.
 
-### 3. Progress and reward confirmation
-Draft success title: **Your 30 days of Premium are ready**
-Show exact access end date and **Explore Premium**.
-Show pending, qualified and reward-granted states as needed.
+### 3. Inviter confirmation, prompts and reward lifecycle
+Final copy (approved by Evelise, Nov 2026). Text in `[brackets]` is filled in by the app.
+
+**F. Inviter's reward confirmation** (next app open after a friend joins)
+- Title: **[Sarah] joined Stay Positive!**
+- Body: **You've earned 30 days of Premium. You now have Premium until [Jan 6, 2027].**
+- Button: **Explore Premium** · Text link: **Invite another friend**
+- Cap reached or paid subscriber: **[Sarah] joined Stay Positive! Thank you for sharing. They now have 30 days of Premium.**
+
+**G. Prompt after sign-up/login** (bottom sheet, shown once)
+- Title: **Know someone who'd love this?**
+- Body: **Invite a friend and you'll each get 30 days of Premium.**
+- Buttons: **Invite a friend** · **Not now**
+
+**H. Prompt after finishing an activity** (at most once every 7 days, after the activity's completion screen)
+- Title: **Feeling encouraged? Pass it on.**
+- Body: **Invite a friend to Stay Positive and you'll each get 30 days of Premium.**
+- Buttons: **Invite a friend** · **Not now** · **Don't show again**
+
+**I. Home screen card** (stays until dismissed)
+- Title: **Share a little encouragement**
+- Body: **Invite a friend. You'll each get 30 days of Premium.**
+- Button: **Invite** · close icon (✕)
+
+**J. Reward expiring and expired** (in-app only; device notifications remain opt-in)
+- 3 days before: **Your Premium from referrals ends on [date]. Your journal entries and favorites are always kept.**
+- After it ends: **Your referral Premium has ended. Everything you saved is still here.** Button: **See Premium plans**
+
+**K. Error states**
+- Offline: **You're offline. Your invite code will appear when you're back online.**
+- Program unavailable: **Invites aren't available right now. Please check back later.**
+
 What the inviter sees (decided by Evelise):
 - **Counts and status:** for example "2 friends joined · 2 of 3 rewards earned · Premium until Dec 12".
 - **A row per friend with their first name or display name:** for example "Sarah joined · 30 days added" or "Sarah joined · Thanks for sharing" (see the main screen copy).
@@ -196,7 +224,8 @@ Track referral screen views, share action initiated, invitation landing, referra
 - [x] Inviter visibility: counts and status plus each friend's first or display name, with notice at sign-up (decided Nov 2026).
 - [x] Main referral screen copy (approved Nov 2026).
 - [x] Invited friend's journey copy (approved Nov 2026).
-- [ ] Finalize remaining screen copy and program terms.
+- [x] Inviter confirmation, prompts, expiry and error copy (approved Nov 2026).
+- [ ] Write program terms.
 - [ ] Complete Figma designs and link them here.
 - [ ] Create implementation subtasks and determine rollout.
 
