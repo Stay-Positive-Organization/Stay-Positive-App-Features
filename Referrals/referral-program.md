@@ -32,7 +32,7 @@ Thirty days gives both people enough time to use Premium as part of a routine, n
 - Sharing, clicking a link or installing alone does not earn a reward.
 - Invited friend reward: one 30-day grant per eligible new account.
 - Inviter reward: pilot cap of three qualifying friends (decided by Evelise), so at most 90 reward days per inviter. Show remaining eligibility clearly, for example "2 of 3 rewards left".
-- Proposed redemption window: the friend creates their account within 30 days of accepting the invitation. Finalize timing and precise expiry behavior before launch.
+- Redemption window (decided by Evelise): the friend creates their account within 30 days of accepting the invitation. After that the invitation expires and neither person is rewarded for it.
 - One friend can credit only one inviter; proposed rule is the first valid referral confirmed by the friend. Do not overwrite it silently.
 - Self-referrals, duplicate claims and repeated processing must not create additional grants.
 - Complimentary access requires no payment details and does not start an automatically renewing subscription.
@@ -103,7 +103,7 @@ Track referral screen views, share action initiated, invitation landing, referra
 - [x] Confirm reward length: 30 days for both people (decided Nov 2026; previously proposed 7).
 - [x] Qualifying action: account creation (decided Nov 2026; previously proposed first check-in).
 - [x] Inviter cap: three rewarded referrals, up to 90 days (decided Nov 2026; previously proposed four).
-- [ ] Confirm 30-day redemption window.
+- [x] Redemption window: 30 days (decided Nov 2026).
 - [ ] Resolve paid subscribers, trials and promotion stacking.
 - [ ] Finalize rules, terms, entry point and screen copy.
 - [ ] Complete Figma designs and link them here.
