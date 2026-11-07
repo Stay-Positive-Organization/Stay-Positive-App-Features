@@ -21,18 +21,18 @@ Thirty days gives both people enough time to use Premium as part of a routine, n
 
 | Participant | Proposed benefit | Proposed trigger |
 |---|---|---|
-| Invited friend | 30 days of complimentary Premium, once per new account | Creates an eligible account through the referral and completes their first mood check-in |
+| Invited friend | 30 days of complimentary Premium, once per new account | Creates an eligible new account through the referral |
 | Inviter | 30 days of complimentary Premium per qualifying friend | The same referral qualifies; one reward per friend |
 
-The mood itself is never shown to the inviter. Qualification is based only on completion, not the selected feeling. A check-in does not grant personalization consent.
+**Qualifying action (decided by Evelise): account creation.** A referral qualifies when an eligible new account is created with the referral applied; no check-in or other in-app activity is required. Because this is a low bar for a 30-day reward, the one-reward-per-account rule, inviter cap and duplicate/self-referral protections are what limit misuse. The inviter never sees the friend's moods or other activity.
 
 ## Proposed pilot rules
 - Free users can invite friends. Premium subscribers may also invite, but reward handling for active paid subscriptions must be resolved before including them in reward eligibility.
-- A qualifying friend is a new Stay Positive account with one valid referral attached before qualification. Existing accounts cannot claim a new-user reward.
+- A qualifying friend is a new Stay Positive account with one valid referral applied during sign-up, before the account is created. A code entered after account creation does not qualify. Existing accounts cannot claim a new-user reward.
 - Sharing, clicking a link or installing alone does not earn a reward.
 - Invited friend reward: one 30-day grant per eligible new account.
 - Inviter reward: proposed pilot cap of four qualifying friends (120 reward days total per inviter). Show remaining eligibility clearly; finalize the cap before launch.
-- Proposed redemption window: the friend completes account creation and their first check-in within 30 days of accepting the invitation. Finalize timing and precise expiry behavior before launch.
+- Proposed redemption window: the friend creates their account within 30 days of accepting the invitation. Finalize timing and precise expiry behavior before launch.
 - One friend can credit only one inviter; proposed rule is the first valid referral confirmed by the friend. Do not overwrite it silently.
 - Self-referrals, duplicate claims and repeated processing must not create additional grants.
 - Complimentary access requires no payment details and does not start an automatically renewing subscription.
@@ -53,9 +53,9 @@ Suggested entry point: Profile/Settings row **Invite a friend**.
 ### 1. Main referral screen
 Draft copy, conditional on final offer:
 - Title: **Share a little encouragement**
-- Supporting line: **Invite a friend to Stay Positive. When they join and complete their first check-in, you both get 30 days of Premium.**
+- Supporting line: **Invite a friend to Stay Positive. When they create their account, you both get 30 days of Premium.**
 - Personal link/code with **Copy link** and **Invite a friend** actions.
-- Brief "How it works": share your link → friend joins and checks in → both receive Premium.
+- Brief "How it works": share your link → friend creates an account → both receive Premium.
 - Reward summary: earned days, active access end date and remaining referral eligibility.
 - Program terms link with eligibility, reward cap and expiry details.
 - Avoid contact uploads or automatic invitations; open the native share sheet so the person chooses whom to invite.
@@ -67,8 +67,8 @@ Explain the 30-day reward and qualifying action before account creation.
 - Link without the app: show an invitation page with the correct available store destination and a visible code to enter after installation.
 - Do not assume referral attribution survives a store install; define and test the link/code handoff. Provide manual code entry as fallback.
 - Confirm an applied referral visibly; an invalid code must not prevent ordinary onboarding.
-- Complete the existing onboarding/check-in flow without a duplicate check-in screen.
-- Record qualification once; show the reward confirmation after the qualifying action.
+- Apply the referral before account creation, then continue the existing onboarding flow unchanged.
+- Record qualification once when the account is created; show the friend's reward confirmation once onboarding allows it.
 
 ### 3. Progress and reward confirmation
 Draft success title: **Your 30 days of Premium are ready**
@@ -101,7 +101,7 @@ Track referral screen views, share action initiated, invitation landing, referra
 
 ## Decisions to finalize with Evelise
 - [x] Confirm reward length: 30 days for both people (decided Nov 2026; previously proposed 7).
-- [ ] Confirm first check-in as the qualifying action.
+- [x] Qualifying action: account creation (decided Nov 2026; previously proposed first check-in).
 - [ ] Confirm four-referral pilot cap and 30-day redemption window.
 - [ ] Resolve paid subscribers, trials and promotion stacking.
 - [ ] Finalize rules, terms, entry point and screen copy.
