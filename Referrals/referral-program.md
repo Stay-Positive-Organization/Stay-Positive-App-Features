@@ -48,8 +48,16 @@ An active paid subscription must not be silently paused, canceled, discounted or
 
 Also resolve interactions with existing trials/promotions, restoring purchases, refunds, account changes and platform changes. Referral access should follow the same account entitlement across supported devices without duplicating rewards.
 
-## Suggested entry point and screens
-Suggested entry point: Profile/Settings row **Invite a friend**.
+## Entry points and screens
+Entry points (decided by Evelise):
+
+1. **Sign-up: "Have a referral code?"** For the invited friend. An optional field in the sign-up flow, prefilled when the invitation link carries the code. The code must be applied before the account is created.
+2. **After sign-up or login: invite prompt.** For existing and new users, inviting them to share Stay Positive. Opens the main referral screen.
+3. **Profile/Settings row: Invite a friend.** The permanent home of the referral screen.
+4. **One prompt at a good moment.** A contextual invite after a positive moment in the app. The moment is to be decided.
+5. **Home screen spot.** A card or banner that opens the main referral screen.
+
+Proposed guardrails, to confirm during UX: every prompt and the Home spot can be dismissed; show at most one invite prompt per session; the after-login prompt does not appear on every login; hide prompts when the inviter has no rewards left and is not a paid subscriber, or when the program is unavailable.
 
 ### 1. Main referral screen
 Draft copy, conditional on final offer:
@@ -107,7 +115,9 @@ Track referral screen views, share action initiated, invitation landing, referra
 - [x] Redemption window: 30 days (decided Nov 2026).
 - [x] Paid subscribers: can invite; no inviter reward in the pilot; their friends still get 30 days (decided Nov 2026).
 - [ ] Resolve trials and promotion stacking.
-- [ ] Finalize rules, terms, entry point and screen copy.
+- [x] Entry points: sign-up code field, after sign-up/login prompt, Profile/Settings row, one contextual prompt, Home screen spot (decided Nov 2026).
+- [ ] Choose the moment for the contextual prompt and confirm prompt guardrails.
+- [ ] Finalize terms and screen copy.
 - [ ] Complete Figma designs and link them here.
 - [ ] Create implementation subtasks and determine rollout.
 
