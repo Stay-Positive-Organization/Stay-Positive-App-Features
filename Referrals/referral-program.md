@@ -15,14 +15,14 @@ Help people introduce someone they care about to Stay Positive and experience Pr
 ## Reward direction and proposed starting offer
 Evelise supports offering free Premium access as a referral reward.
 
-**Recommended pilot: give 7 days of Premium to the invited friend and 7 days to the inviter after the friend qualifies.** Reward duration, eligibility, limits and paid-subscriber treatment below are proposals to refine during UX/product work, not final launch terms.
+**Pilot offer (decided by Evelise): give 30 days of Premium to the invited friend and 30 days to the inviter after the friend qualifies.** Eligibility, limits and paid-subscriber treatment below are proposals to refine during UX/product work, not final launch terms.
 
-Seven days provides a short opportunity to try Premium. Whether it improves activation, retention or conversion remains a hypothesis to measure. Do not describe the program as proven growth.
+Thirty days gives both people enough time to use Premium as part of a routine, not just sample it. Because the reward is larger, the cap, redemption window and misuse protections below matter more. Whether it improves activation, retention or conversion remains a hypothesis to measure. Do not describe the program as proven growth.
 
 | Participant | Proposed benefit | Proposed trigger |
 |---|---|---|
-| Invited friend | 7 days of complimentary Premium, once per new account | Creates an eligible account through the referral and completes their first mood check-in |
-| Inviter | 7 days of complimentary Premium per qualifying friend | The same referral qualifies; one reward per friend |
+| Invited friend | 30 days of complimentary Premium, once per new account | Creates an eligible account through the referral and completes their first mood check-in |
+| Inviter | 30 days of complimentary Premium per qualifying friend | The same referral qualifies; one reward per friend |
 
 The mood itself is never shown to the inviter. Qualification is based only on completion, not the selected feeling. A check-in does not grant personalization consent.
 
@@ -30,8 +30,8 @@ The mood itself is never shown to the inviter. Qualification is based only on co
 - Free users can invite friends. Premium subscribers may also invite, but reward handling for active paid subscriptions must be resolved before including them in reward eligibility.
 - A qualifying friend is a new Stay Positive account with one valid referral attached before qualification. Existing accounts cannot claim a new-user reward.
 - Sharing, clicking a link or installing alone does not earn a reward.
-- Invited friend reward: one 7-day grant per eligible new account.
-- Inviter reward: proposed pilot cap of four qualifying friends (28 reward days total per inviter). Show remaining eligibility clearly; finalize the cap before launch.
+- Invited friend reward: one 30-day grant per eligible new account.
+- Inviter reward: proposed pilot cap of four qualifying friends (120 reward days total per inviter). Show remaining eligibility clearly; finalize the cap before launch.
 - Proposed redemption window: the friend completes account creation and their first check-in within 30 days of accepting the invitation. Finalize timing and precise expiry behavior before launch.
 - One friend can credit only one inviter; proposed rule is the first valid referral confirmed by the friend. Do not overwrite it silently.
 - Self-referrals, duplicate claims and repeated processing must not create additional grants.
@@ -53,7 +53,7 @@ Suggested entry point: Profile/Settings row **Invite a friend**.
 ### 1. Main referral screen
 Draft copy, conditional on final offer:
 - Title: **Share a little encouragement**
-- Supporting line: **Invite a friend to Stay Positive. When they join and complete their first check-in, you both get 7 days of Premium.**
+- Supporting line: **Invite a friend to Stay Positive. When they join and complete their first check-in, you both get 30 days of Premium.**
 - Personal link/code with **Copy link** and **Invite a friend** actions.
 - Brief "How it works": share your link → friend joins and checks in → both receive Premium.
 - Reward summary: earned days, active access end date and remaining referral eligibility.
@@ -62,7 +62,7 @@ Draft copy, conditional on final offer:
 
 ### 2. Friend invitation and acceptance
 Draft heading: **A little encouragement, shared with you**
-Explain the 7-day reward and qualifying action before account creation.
+Explain the 30-day reward and qualifying action before account creation.
 - Link with app installed: open the referral acceptance route.
 - Link without the app: show an invitation page with the correct available store destination and a visible code to enter after installation.
 - Do not assume referral attribution survives a store install; define and test the link/code handoff. Provide manual code entry as fallback.
@@ -71,7 +71,7 @@ Explain the 7-day reward and qualifying action before account creation.
 - Record qualification once; show the reward confirmation after the qualifying action.
 
 ### 3. Progress and reward confirmation
-Draft success title: **Your Premium week is ready**
+Draft success title: **Your 30 days of Premium are ready**
 Show exact access end date and **Explore Premium**.
 Show pending, qualified and reward-granted states as needed.
 Use aggregate counts/status without exposing friends' moods, journal text, chat, purchases or other private activity. Prefer anonymous referral rows.
@@ -100,7 +100,7 @@ Use server-side eligibility and reward calculations; never rely on client-only c
 Track referral screen views, share action initiated, invitation landing, referral applied, qualification, reward granted/expired and subsequent Premium purchase. Measure referred-user activation and retention, plus reward cost and misuse, before expanding the offer. Do not send mood values or private content in referral analytics.
 
 ## Decisions to finalize with Evelise
-- [ ] Confirm 7 days for both people.
+- [x] Confirm reward length: 30 days for both people (decided Nov 2026; previously proposed 7).
 - [ ] Confirm first check-in as the qualifying action.
 - [ ] Confirm four-referral pilot cap and 30-day redemption window.
 - [ ] Resolve paid subscribers, trials and promotion stacking.
