@@ -36,7 +36,9 @@ Every product decision behind the Home docs, plus what's still open.
 - Meditations stay YouTube videos. The app adds no ads to meditative screens; YouTube's own in-video ads are accepted.
 - Only the featured Story on Home.
 - **No comments** on Stories or quotes in MVP. Stories have Like and Share.
-- Quotes all come from Seeds for Life. "See more" opens https://www.instagram.com/seedsforlife1111/.
+- Quotes are our own only: credited **Stay Positive** (written by us) or **Seeds for Life** (posted by Seeds for Life). No outside authors, including public domain ones. "See more" opens https://www.instagram.com/seedsforlife1111/.
+- Words to carry quote of the day: a dated schedule for special days, otherwise an automatic rotation through the library, the same for everyone and changing at local midnight. Quotes are edited in the Firebase console (`quotes/library`, `quotes/schedule`).
+- Words to carry fonts follow the app rule: Montserrat text, Alegreya Italic for the quote, Cormorant Italic for the See more button.
 - Saved quotes go to their own Quotes favorites list. No screen to view them yet (Phase 2).
 - Prayer: no voice toggle; end screen buttons "Done" and "Read full chapter". Phase 1 prayers are text only: Play moves through the lines on a timer. Narration is Phase 2. Saved prayers can be used in Reset Routine.
 - Meditation player: no category label.

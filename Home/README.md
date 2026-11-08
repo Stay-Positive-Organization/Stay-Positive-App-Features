@@ -27,7 +27,7 @@ The main reference for the Stay Positive Home screen: what it contains, in what 
 | [pick-content.md](pick-content.md) | The specific content for each mood and pick type |
 | [pick-destinations.md](pick-destinations.md) | Meditation player, Guided prayer, Talk with Alex, Journaling |
 | [stories-home.md](stories-home.md) | Today's story card and Story screen |
-| [quotes-home.md](quotes-home.md) | "Words to carry" card |
+| [Quotes Home.md](Quotes%20Home.md) | "Words to carry" card, quote of the day, content rules ([quote list](Quotes.md)) |
 | [streaks.md](streaks.md) | Streak icon and Your streak screen |
 | [notifications.md](notifications.md) | Bell, Notifications screen, reminders, copy |
 | [journal.md](journal.md) | Journal tab |
