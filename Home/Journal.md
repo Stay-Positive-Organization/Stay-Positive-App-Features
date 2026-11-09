@@ -30,6 +30,14 @@ The Journaling screen also includes **30 Days of Gratitude**, a guided journey w
 
 The no-prompts editor behavior above applies to regular free-writing. Gratitude entries display their assigned prompt while reusing the same journal storage, privacy, and editing behavior.
 
+## Explore prompts
+
+An optional **Explore prompts** browser shows one reviewed prompt at a time, with unlimited skipping and a topic filter, then opens the editor with the prompt attached. Free and Premium. See [Explore prompts](../Journaling/explore-prompts.md) and the shared [prompt collection](../Journaling/prompt-collection.md).
+
+## Talk it through (Premium)
+
+Conversational journaling: the person writes or speaks, and a Guided listener or Alex replies with one gentle question. The conversation is saved as one private entry. See [Talk it through](../Journaling/talk-it-through.md).
+
 ## Privacy
 
 - Entries are readable only by their owner (Firestore security rules).
