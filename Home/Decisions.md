@@ -42,7 +42,7 @@ Every product decision behind the Home docs, plus what's still open.
 - Saved quotes go to their own Quotes favorites list. No screen to view them yet (Phase 2).
 - Prayer: no voice toggle; end screen buttons "Done" and "Read full chapter". Phase 1 prayers are text only: Play moves through the lines on a timer. Narration is Phase 2. Saved prayers can be used in Reset Routine.
 - Meditation player: no category label.
-- Alex suggests new quick replies as the conversation goes; conversations persist. The Alex menu has only "Clear conversation" for now (no report option yet).
+- Alex suggests new quick replies as the conversation goes; conversations persist. The Alex menu has "Clear conversation" and "Reflect in your journal" (opens Talk it through); no report option yet.
 - Stories: no like count shown to users; Share appears in both the top bar and the bottom bar.
 - Talk with Alex composer has a mic and Send.
 

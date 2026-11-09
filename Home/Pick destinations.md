@@ -112,7 +112,8 @@ Quick reply rules:
 Conversation history:
 - The conversation persists and is there when the user returns.
 - Stored per user, readable only by that user.
-- "Clear conversation" in the menu deletes it. It is the only menu option for now; reporting a reply comes later.
+- "Clear conversation" in the menu deletes it. Reporting a reply comes later.
+- **Reflect in your journal** in the menu opens [Talk it through](../Journaling/talk-it-through.md), where Alex acts as a listener and the session is saved as a journal entry. No messages carry over. See [how the two differ](../Journaling/talk-it-through.md#how-it-differs-from-talk-with-alex).
 
 Opening message when coming from the Home card: "Hi {firstName}. It sounds like this week has been a lot. I'm here if you want to talk it through."
 

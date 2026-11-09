@@ -20,6 +20,22 @@ People can type or speak in both. The finished conversation is saved as one priv
 
 This extends the [Journal specification](../Home/Journal.md) and reuses its storage, privacy, edit and delete behavior. Visuals live in the Figma file; this doc covers behavior and copy.
 
+## How it differs from Talk with Alex
+
+Both are Premium and both can involve Alex, so each has a clear job. Talk with Alex is a companion you come back to; Talk it through is a sitting you finish and keep.
+
+| | Talk with Alex | Talk it through (With Alex) |
+|---|---|---|
+| Lives in | Explore more on Home, Alex pick | Journal tab |
+| Alex's role | Companion: encouragement, ideas, suggestions | Listener: reflects back, asks one question, no advice |
+| Reply style | Conversational, with quick-reply chips | Under 60 words, at most one question, no chips |
+| Conversation | One ongoing thread that persists | A session with a start and an end |
+| Result | Stays in the Alex chat | Saved as a private journal entry, or discarded |
+| Context Alex sees | The ongoing thread | Only the current session |
+| Without AI | Not available | Guided listener |
+
+Each points to the other (see [Cross-links](#cross-links)).
+
 ## User story
 
 As a Premium member, when I have something on my mind, I want to talk it through as if someone were listening and asking me good questions, so I can understand what I feel without staring at a blank page.
@@ -74,6 +90,8 @@ From Explore prompts, Premium members see a **Talk it through** action on the pr
 
 The last choice is pre-selected next time. Both lead to the same conversation page.
 
+Under the options, a quiet link: "Looking for encouragement or ideas? **Talk with Alex**", opening Talk with Alex.
+
 ## Alex consent
 
 Shown the first time someone chooses **With Alex**, and again only if they turned it off. This consent is separate from personalization consent.
@@ -121,7 +139,7 @@ Replies come from the curated follow-up set below. No text leaves the device for
 
 ### Alex listener
 
-Uses the same AI service as [Talk with Alex](../Home/Pick%20destinations.md#3-talk-with-alex). Alex's instructions for this mode:
+Uses the same AI service as [Talk with Alex](../Home/Pick%20destinations.md#3-talk-with-alex), with its own instructions so it behaves as a listener rather than a companion. Alex's instructions for this mode:
 
 - Listen first. Reply with one short reflection and at most one question, under 60 words.
 - Mirror the person's words; don't rush to fix, advise or quote Scripture unless they bring up faith.
@@ -162,6 +180,15 @@ Uses the same AI service as [Talk with Alex](../Home/Pick%20destinations.md#3-ta
 - The entry view shows the whole conversation: listener questions in a quieter style, the person's words in the main style.
 - History preview shows the person's first message, never a listener reply.
 - Edit lets the person change their own words; listener replies stay as they were. Delete uses the existing confirmation flow.
+
+## Cross-links
+
+| From | Link | Opens |
+|---|---|---|
+| Talk it through, Choose a listener | "Looking for encouragement or ideas? **Talk with Alex**" | Talk with Alex |
+| Talk with Alex, menu | **Reflect in your journal** | Talk it through, Choose a listener |
+
+The links open the other feature fresh; no messages carry over between them.
 
 ## Safety
 
@@ -266,6 +293,7 @@ Never message text or anything derived from it.
 - [ ] Save to journal creates one entry that shows the full conversation; Discard removes the draft.
 - [ ] Closing the app mid-session keeps the draft.
 - [ ] Starting from an Explore prompt uses it as the opening question.
+- [ ] Choose a listener links to Talk with Alex, and Talk with Alex's menu links to Talk it through; neither carries messages over.
 - [ ] Saving counts toward the streak.
 - [ ] Conversation text never appears in analytics, logs, notifications, Home or personalization.
 - [ ] Another account cannot read these entries.
@@ -280,6 +308,7 @@ Settled:
 - Name: **Talk it through**. "Therapy" stays out of the app and store listing.
 - 50 Alex replies per day, resetting at local midnight.
 - Read replies aloud ships in the first version, off by default.
+- Lives in Journaling, alongside Talk with Alex. With Alex here is a listener, not a companion, and each feature links to the other.
 
 Still to confirm:
 
