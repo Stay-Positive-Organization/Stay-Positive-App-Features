@@ -130,6 +130,13 @@ Uses the same AI service as [Talk with Alex](../Home/Pick%20destinations.md#3-ta
 - Only this session's messages are sent as context. No past entries, check-ins or other conversations.
 - If the service fails, show "Alex couldn't reply just now." with **Try again** and **Continue with Guided**, which hands the session to the Guided listener.
 
+#### Daily limit
+
+- 50 Alex replies per member per day, resetting at midnight local time.
+- Failed requests and fixed safety messages don't count.
+- When the limit is reached, show "You've reached today's replies from Alex. You can keep going with Guided, or come back tomorrow." with **Continue with Guided**. The session and its messages stay intact.
+- Starting a new session after the limit is reached offers Guided only, with the same line under the With Alex option.
+
 ### Voice
 
 - The mic uses on-device speech-to-text, like the existing journal dictation. Audio is never stored or sent.
@@ -241,6 +248,7 @@ Never message text or anything derived from it.
 | `tit_ended` | `listener`, `turns`, `outcome` (`saved`, `discarded`) |
 | `tit_safety_shown` | `listener` |
 | `tit_alex_error` | — |
+| `tit_alex_limit_reached` | — |
 
 ## Acceptance criteria
 
@@ -250,6 +258,7 @@ Never message text or anything derived from it.
 - [ ] Ask me something else returns another follow-up from the same stage.
 - [ ] Alex replies use only the current session, stay under 60 words and ask at most one question.
 - [ ] An Alex failure offers Try again and Continue with Guided without losing messages.
+- [ ] After 50 Alex replies in a day, the session hands off to Guided without losing messages; failed requests and safety messages don't count; the count resets at local midnight.
 - [ ] Voice input transcribes on the device and stores no audio.
 - [ ] Read replies aloud is off by default and speaks replies when on.
 - [ ] The not-therapy notice and crisis-line link are available throughout the session.
@@ -268,13 +277,13 @@ Settled:
 - Premium only, including voice.
 - Two listeners: Guided (curated follow-ups) and With Alex.
 - One shared prompt collection with Explore prompts and Reset.
+- Name: **Talk it through**. "Therapy" stays out of the app and store listing.
+- 50 Alex replies per day, resetting at local midnight.
+- Read replies aloud ships in the first version, off by default.
 
 Still to confirm:
 
-- Product name: **Talk it through** (proposed). Avoid "therapy" in the app and store listing.
 - Alex AI service terms: no retention or training on Talk it through text.
-- Daily limit on Alex replies, if any (Book notes uses 30 per day).
-- Whether Read replies aloud is in the first version or Phase 2.
 
 ## Phase 2
 
