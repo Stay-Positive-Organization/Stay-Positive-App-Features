@@ -41,7 +41,7 @@ Opening the journey or editor alone does not complete a day. Existing users do n
 
 ## Journaling entry card
 
-Place the card in the Journal tab without replacing **New entry**, journal history, the privacy line, or bottom navigation. Final placement follows the Journaling design.
+The card sits on the Journal tab under the Explore prompts and Talk it through cards, at full size, without replacing **New entry**, journal history, the privacy line or bottom navigation. Design: [Figma › Journaling V3](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3130-723).
 
 | State | Content | Action |
 |---|---|---|

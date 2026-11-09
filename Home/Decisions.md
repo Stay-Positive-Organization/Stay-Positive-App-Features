@@ -28,7 +28,7 @@ Every product decision behind the Home docs, plus what's still open.
 - Free: Today's Verse, Stories, Words to carry, check-in, streaks, notifications, and the Meditations, Affirmations, Journal and Prayer tabs with no limits.
 - Premium only: For your heart today, Reset Routine, Virtual Library, Talk with Alex, no ads.
 - Tapping a Premium feature as a Free user opens the full upgrade screen.
-- Free ad banner sits above the bottom navigation, on Home only.
+- Free ad banner sits above the bottom navigation, on Home and the Journal tab only (never in the editor, Talk it through or completion screens).
 
 ### Content
 - "Read full chapter" opens an in-app Bible reader.

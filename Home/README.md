@@ -88,7 +88,7 @@ Home, Meditations, Affirmations, Journal, Prayer. All four content tabs are full
 
 ### Ad banner (Free only)
 
-Full-width banner anchored **above** the bottom navigation (moved from below it in Figma, to avoid accidental taps that can flag the AdMob account). Home only.
+Full-width banner anchored **above** the bottom navigation (moved from below it in Figma, to avoid accidental taps that can flag the AdMob account). Shown on Home and on the Journal tab list; see [Journal](Journal.md).
 
 ## Free vs Premium
 
@@ -101,7 +101,7 @@ Full-width banner anchored **above** the bottom navigation (moved from below it 
 | Streaks, Notifications | Yes | Yes |
 | Reset Routine, Virtual Library, Talk with Alex | Badge → upgrade screen | Yes |
 | Shop Stay Positive (store website) | Yes | Yes |
-| Ad banner on Home | Yes | No |
+| Ad banner on Home and the Journal tab | Yes | No |
 | Personalization | No | Yes, with consent |
 
 ## Home state logic
@@ -126,7 +126,7 @@ Mood changed later the same day (Premium):
 
 ## Content rules
 
-- The app never adds its own ads to meditation, prayer, journaling, Alex or completion screens. Meditations are YouTube videos; ads YouTube shows inside a video are outside the app's control.
+- The app never adds its own ads to meditation, prayer, the journal editor, Talk it through, Alex or completion screens. The Journal tab list shows the Free banner, like Home. Meditations are YouTube videos; ads YouTube shows inside a video are outside the app's control.
 - Never show journal or prayer text written by the user on Home.
 - Never claim content is personalized when it isn't.
 - Never imply a diagnosis or treatment from a mood.

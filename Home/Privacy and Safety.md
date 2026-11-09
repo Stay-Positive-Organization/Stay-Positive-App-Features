@@ -99,8 +99,8 @@ Delete server-side (Cloud Function) so nothing is left in Firestore or Storage.
 
 ## Ads
 
-- Free Home only: banner above the bottom navigation.
-- The app never adds ads to meditation, prayer, journaling, Alex or completion screens.
+- Free only: banner above the bottom navigation on Home and on the Journal tab (the list screen).
+- The app never adds ads to meditation, prayer, the journal editor, Talk it through, Alex or completion screens.
 - Meditations are YouTube videos; ads YouTube shows inside them are outside the app's control.
 
 ## Personalization implementation issues

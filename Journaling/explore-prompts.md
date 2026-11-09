@@ -13,7 +13,7 @@ Sometimes people want to journal but don't know where to begin. Other times they
 
 This extends the [Journal specification](../Home/Journal.md). Regular free-writing keeps its existing no-prompt editor. Only entries started from Explore prompts carry a prompt.
 
-**Source of truth for visuals:** the Figma file. This doc covers behavior, copy and product decisions; fonts, sizes and spacing live in Figma.
+**Source of truth for visuals:** the Figma file, [Journaling V3](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3130-723). This doc covers behavior, copy and product decisions; fonts, sizes and spacing live in Figma.
 
 ## User story
 
@@ -56,7 +56,7 @@ Leaving the browser, or leaving the editor without typing, saves nothing.
 
 ## Journaling entry point
 
-Place **Explore prompts** in the Journal tab without replacing **New entry**, journal history, the privacy line, the 30 Days of Gratitude card or bottom navigation. Final placement follows the Journaling design in Figma.
+**Explore prompts** is a card on the Journal tab, under **New entry** and beside the **Talk it through** card, above the 30 Days of Gratitude card. New entry, journal history, the privacy line and bottom navigation stay as they are. See [Journal tab](../Home/Journal.md#journal-tab).
 
 | Element | Copy |
 |---|---|
@@ -222,10 +222,10 @@ Settled:
 - Five launch topics, 20 prompts each.
 - A Faith topic plus a light faith touch in other topics.
 - The browser always opens on All.
+- Entry point: a card beside Talk it through under New entry (Figma › Journaling V3 › Journal tab).
 
 Still to confirm:
 
-- Entry point placement and look on the Journaling screen (Figma).
 - Who on the team reviews and approves new prompts.
 
 ## Phase 2

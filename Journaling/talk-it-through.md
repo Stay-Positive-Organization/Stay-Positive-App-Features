@@ -18,7 +18,7 @@ People can type or speak in both. The finished conversation is saved as one priv
 
 **This is not therapy.** The product name and copy never call it therapy, counseling or treatment, and the listener never diagnoses or gives clinical advice. "Therapy" is the internal inspiration only.
 
-This extends the [Journal specification](../Home/Journal.md) and reuses its storage, privacy, edit and delete behavior. Visuals live in the Figma file; this doc covers behavior and copy.
+This extends the [Journal specification](../Home/Journal.md) and reuses its storage, privacy, edit and delete behavior. Visuals live in the Figma file, [Journaling V3](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3130-723); this doc covers behavior and copy.
 
 ## How it differs from Talk with Alex
 
@@ -77,9 +77,11 @@ From Explore prompts, Premium members see a **Talk it through** action on the pr
 
 | Element | Copy |
 |---|---|
+| Placement | Card on the Journal tab, beside Explore prompts, under New entry |
 | Title | Talk it through |
-| Supporting line | Say what's on your heart. A gentle question comes back. |
-| Badge (Free) | PREMIUM — tapping opens the full upgrade screen |
+| Supporting line (Premium) | Say what's on your heart. A gentle question comes back. |
+| Supporting line (Free) | Premium: say what's on your heart. A gentle question comes back. |
+| Badge (Free only) | 🔒 PREMIUM, gold, top-right of the card. Tapping the card opens the full upgrade screen. Premium members see no badge. |
 
 ## Choose a listener
 
