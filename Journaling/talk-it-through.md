@@ -209,7 +209,7 @@ Applies in both modes.
 | Data | Rule |
 |---|---|
 | Conversation text | Saved as a journal entry, readable only by its owner. Never on Home, in notifications, analytics, logs or personalization. |
-| Text sent to Alex | Only with Alex consent, only the current session, only to write the reply. Confirm the provider doesn't retain or train on it. |
+| Text sent to Alex | Only with Alex consent, only the current session, only to write the reply. Never used to train AI models: Alex's requests go through a paid API project whose terms exclude using prompts and responses to improve the provider's products. |
 | Voice | On-device speech-to-text and text-to-speech. Audio never stored or sent. |
 | Alex consent | Stored per account, separate from personalization consent. |
 
@@ -311,10 +311,9 @@ Settled:
 - 50 Alex replies per day, resetting at local midnight.
 - Read replies aloud ships in the first version, off by default.
 - Lives in Journaling, alongside Talk with Alex. With Alex here is a listener, not a companion, and each feature links to the other.
+- Talk it through text is never used to train AI models. Alex runs on a paid API project (Gemini: billing enabled) so the provider doesn't use prompts or responses to improve its products.
 
-Still to confirm:
-
-- Alex AI service terms: no retention or training on Talk it through text.
+No open decisions.
 
 ## Phase 2
 
