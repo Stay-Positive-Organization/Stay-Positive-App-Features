@@ -3,7 +3,7 @@
 **Status:** Feature specification for implementation; not a claim that the feature has shipped.  
 **Platforms:** Android (Kotlin) and iOS product behavior.  
 **Access:** Free and Premium, no badge, no upgrade screen.  
-**Design:** [Shop Stay Positive entry canvas](https://claude.ai/artifact/VGYs7Zvho2gNwQPBzk3HJ2). Not in the Figma file yet; once added there, Figma is the source of truth.
+**Design:** the Welcome Page (Home) frames in the [Figma file](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App), which are the source of truth. Also shown on the [Shop Stay Positive entry canvas](https://claude.ai/artifact/VGYs7Zvho2gNwQPBzk3HJ2).
 
 ## Purpose
 
@@ -45,7 +45,7 @@ Same pattern as the other Explore more rows, with two differences: no PREMIUM ba
 
 Subtitle uses `muted`, not `sage`: sage fails contrast for small text (see [design-tokens.md](design-tokens.md)).
 
-Fonts, sizes and spacing: see the design (Figma once added).
+Fonts, sizes and spacing: see the Figma file.
 
 ## Behavior
 
@@ -85,7 +85,6 @@ The design also has a card with a **Visit the Store** button (forest pill, white
 | Question | Status |
 |---|---|
 | Store URL | Open |
-| Add the design to the Figma file | Open |
 
 ## Acceptance criteria
 
