@@ -88,7 +88,7 @@ Save failure: keep the selection, show "Couldn't save. Retry" under the grid. Ne
 { "userId": "USER_ID", "mood": "ANXIOUS", "checkedInAt": "2026-09-25T08:15:00Z", "source": "HOME" }
 ```
 
-`source` is `HOME` or `JOURNAL`. Picking a mood in the journal editor counts as the day's check-in and shows as selected on Home.
+`source` is `HOME`, `JOURNAL` or `ONBOARDING`. Picking a mood in the journal editor or in [first-time onboarding](../Onboarding/first-time-mood-check-in.md) counts as the day's check-in and shows as selected on Home.
 
 ## Acceptance criteria
 
