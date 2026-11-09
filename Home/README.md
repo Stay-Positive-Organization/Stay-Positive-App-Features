@@ -20,6 +20,7 @@ The main reference for the Stay Positive Home screen: what it contains, in what 
 
 | Document | Covers |
 |---|---|
+| [shop-stay-positive.md](shop-stay-positive.md) | Shop Stay Positive: Explore more row that opens the store website |
 | [kindness-bingo.md](kindness-bingo.md) | Kindness Bingo: 25 activities, saved progress, winning lines, celebration, and sharing |
 | [design-tokens.md](design-tokens.md) | Colors, type, spacing, icons, dark mode, contrast |
 | [mood-check-in.md](mood-check-in.md) | "How is your heart today?" check-in |
@@ -47,7 +48,7 @@ HomeScreen
 │   └── HeartPickCard        For your heart today (Premium, after check-in)
 ├── StoriesSection           "Stories" + Today's story card
 ├── QuotesSection            "Words to carry" card
-├── ExploreMoreSection       Reset Routine, Virtual Library, Talk with Alex
+├── ExploreMoreSection       Reset Routine, Virtual Library, Talk with Alex, Shop Stay Positive
 ├── AdBanner                 Free only, above the bottom navigation
 └── BottomNavigation         Home · Meditations · Affirmations · Journal · Prayer
 ```
@@ -73,6 +74,9 @@ Title "Explore more", subtitle "Tools to help you stay grounded." One list with 
 | Reset Routine | "PREMIUM" badge → upgrade screen | Opens Reset Routine |
 | Virtual Library | "PREMIUM" badge → upgrade screen | Opens Virtual Library |
 | Talk with Alex | "PREMIUM" badge → upgrade screen | Opens Talk with Alex |
+| Shop Stay Positive | No badge → opens the store website | Same as Free |
+
+Shop Stay Positive is the last row and uses an open-in-new icon instead of the arrow; see [shop-stay-positive.md](shop-stay-positive.md).
 
 Tapping a badged row opens the existing full-screen **upgrade screen**. Pass the tapped feature as `source` so it can be tracked.
 
@@ -96,6 +100,7 @@ Full-width banner anchored **above** the bottom navigation (moved from below it 
 | Meditations, Affirmations, Journal, Prayer tabs | Yes, no limits | Yes |
 | Streaks, Notifications | Yes | Yes |
 | Reset Routine, Virtual Library, Talk with Alex | Badge → upgrade screen | Yes |
+| Shop Stay Positive (store website) | Yes | Yes |
 | Ad banner on Home | Yes | No |
 | Personalization | No | Yes, with consent |
 
