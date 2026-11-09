@@ -149,5 +149,5 @@ Writing guidelines for additions are in [Explore prompts › Prompt collection](
 
 1. Draft against the writing guidelines.
 2. Give it the next free ID in its topic (`travel-21`); never reuse a retired ID.
-3. Review for tone, safety and circumstance-neutral wording.
+3. Review for tone, safety and circumstance-neutral wording, then get Evelise's approval.
 4. Add it here and in Firestore with `active: true`.

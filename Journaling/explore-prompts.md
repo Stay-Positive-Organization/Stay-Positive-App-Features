@@ -109,7 +109,7 @@ Prompts come from one shared, reviewed collection. Reset Routine's prompt librar
 - **Launch:** 5 topics × 20 prompts = 100. The full list, with stable IDs, is in [prompt-collection.md](prompt-collection.md).
 - **Growth:** the collection grows over time. New prompts and new topics are added in Firestore without an app update; the app shows any active topic that has active prompts.
 - **Faith:** a dedicated Faith topic, plus a light touch elsewhere (about 3 of every 20 prompts in other topics carry a faith framing).
-- **Review:** every prompt is written and reviewed by the Stay Positive team before it goes live. No prompt is generated on demand.
+- **Review:** every prompt is written by the Stay Positive team and approved by Evelise (founder) before it goes live. No prompt is generated on demand.
 - **Retiring:** set `active: false`. A retired prompt disappears from the browser and from new Reset picks, but stays on entries and existing Reset lists that already use it.
 
 Writing guidelines for new prompts:
@@ -223,10 +223,9 @@ Settled:
 - A Faith topic plus a light faith touch in other topics.
 - The browser always opens on All.
 - Entry point: a card beside Talk it through under New entry (Figma › Journaling V3 › Journal tab).
+- Evelise approves every new or reworded prompt before it goes live.
 
-Still to confirm:
-
-- Who on the team reviews and approves new prompts.
+No open decisions.
 
 ## Phase 2
 
