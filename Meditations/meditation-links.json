@@ -1,0 +1,18 @@
+{
+  "lastUpdated": "2026-11-09",
+  "count": 12,
+  "meditations": [
+    { "id": "relaxation", "title": "Relaxation", "collection": "Relieve Stress", "youtubeId": "cyxv_X-JmxE", "url": "https://www.youtube.com/watch?v=cyxv_X-JmxE" },
+    { "id": "relaxation_ii", "title": "Relaxation II", "collection": "Relieve Stress", "youtubeId": "GTdEJwVOxg0", "url": "https://www.youtube.com/watch?v=GTdEJwVOxg0" },
+    { "id": "work_stress", "title": "Work Stress", "collection": "Relieve Stress", "youtubeId": "X4WjbW6amQw", "url": "https://www.youtube.com/watch?v=X4WjbW6amQw" },
+    { "id": "communication", "title": "Communication", "collection": "Find Focus", "youtubeId": "rJHBW8-56zU", "url": "https://www.youtube.com/watch?v=rJHBW8-56zU" },
+    { "id": "focus", "title": "Focus", "collection": "Find Focus", "youtubeId": "zSkFFW--Ma0", "url": "https://www.youtube.com/watch?v=zSkFFW--Ma0" },
+    { "id": "productivity", "title": "Productivity", "collection": "Find Focus", "youtubeId": "tI16SNCtMrQ", "url": "https://www.youtube.com/watch?v=tI16SNCtMrQ" },
+    { "id": "rainfall", "title": "Rainfall", "collection": "Sleep Well", "youtubeId": "eTeD8DAta4c", "url": "https://www.youtube.com/watch?v=eTeD8DAta4c" },
+    { "id": "pineal_gland_awakening", "title": "Pineal Gland Awakening", "collection": "Guided", "youtubeId": "QgsJfSaiJ4Y", "url": "https://www.youtube.com/watch?v=QgsJfSaiJ4Y" },
+    { "id": "foundations_i", "title": "Foundations I", "collection": "Learn to Meditate", "youtubeId": "VUjiXcfKBn8", "url": "https://www.youtube.com/watch?v=VUjiXcfKBn8" },
+    { "id": "foundations_ii", "title": "Foundations II", "collection": "Learn to Meditate", "youtubeId": "uqtIqCKjkuc", "url": "https://www.youtube.com/watch?v=uqtIqCKjkuc" },
+    { "id": "foundations_iii", "title": "Foundations III", "collection": "Learn to Meditate", "youtubeId": "cesbu-AbcuU", "url": "https://www.youtube.com/watch?v=cesbu-AbcuU" },
+    { "id": "foundations_iv", "title": "Foundations IV", "collection": "Learn to Meditate", "youtubeId": "LTsbayyhKfA", "url": "https://www.youtube.com/watch?v=LTsbayyhKfA" }
+  ]
+}
