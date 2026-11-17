@@ -52,7 +52,12 @@ Replaces the November **Your gratitude journey** card in the same position: full
 - Progress uses a thin progress bar plus the text count, so it doesn't rely on color alone.
 - "See all 31 prompts" is a text link, not a second button.
 
-Design: Figma › Version 3.0 › Journaling V3 › December Reflections (frames to be linked once added).
+Design: Figma › Journaling V3 › December Reflections row
+- [Journal tab with card](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3319-974)
+- [Card component, 3 states](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3319-972)
+- [All prompts](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3321-1019) · [Prompt row component](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3321-1018)
+- [Prompt entry](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3322-1086) · [Prompt entry, empty](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3322-1152)
+- [Saved](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3322-1218)
 
 ## All prompts screen
 
@@ -163,7 +168,7 @@ Use these prompts exactly. Day IDs are stable and independent of wording.
 
 Match the current Journal tab so the card feels native, not promotional.
 
-- Palette: warm cream background (`warmWhite`), soft peach card tint, `forest` for headings and the primary button, `sage` for the progress bar and decoration only.
+- Palette: warm cream background (`warmWhite`), soft peach card (#FAE5DA, outline #F1D3C2, same as the November card), `forest` for headings and the primary button, `sage` (#8FB0A1, the Figma color style) for the progress bar and decoration only.
 - `sage` and peach are decoration only; never small text on light backgrounds (see [design tokens](../Home/design-tokens.md)).
 - Typography per app standard: Alegreya for titles, Montserrat for body and supporting text, Cormorant Garamond Bold on buttons.
 - Optional subtle seasonal detail (a small sprig or star line icon), kept outside the writing area.
@@ -224,4 +229,3 @@ Adapt to the existing Journal schema rather than a separate store of reflection 
 ## Product decisions still to confirm
 
 - When the December card leaves the Journal tab (e.g. early January). Saved reflections stay in the Journal list either way.
-- Sage hex: the request references #86A597; the design tokens list `sage` as #8FB0A1. Figma's color style decides.
