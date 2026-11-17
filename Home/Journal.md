@@ -9,7 +9,7 @@ Journal is a bottom-navigation tab. It is **not** a section on Home (Figma has n
 | Header | "Journal" with a lock line "Only you can see your entries", calendar icon on the right |
 | New entry | Large forest button at the top: "New entry" / "Write whatever is on your heart" |
 | Ways to start | Two cards side by side under New entry: **Explore prompts** (Free and Premium) and **Talk it through** (Premium). Free users see a 🔒 PREMIUM badge on Talk it through; tapping it opens the upgrade screen. |
-| Gratitude journey | The 30 Days of Gratitude card, full size, under the two cards |
+| Seasonal journey | Full-size card under the two cards: the 30 Days of Gratitude card in November, the December Reflections card in December |
 | List | Entries grouped by month (gold label). Row: day number, weekday, a small gold label, two-line preview, mood if set. The label is the prompt's topic for Explore entries ("TRAVEL AND ADVENTURE"), "TALK IT THROUGH · GUIDED" or "· WITH ALEX" for Talk it through entries, and "ENTRY" otherwise. |
 | Ad banner | Free only, above the bottom navigation, with "Remove ads" above it (same banner as Home) |
 | Empty state | Journal illustration, "Your page is ready", short reassuring line, "Write your first entry" |
@@ -34,6 +34,10 @@ Full text with date, time and mood. Overflow menu: Edit, Delete. Any entry can b
 The Journaling screen also includes **30 Days of Gratitude**, a guided journey with 30 prompts, private saved reflections, and persistent completion progress. See the [30 Days of Gratitude specification](../Journaling/30-days-of-gratitude.md) for the entry card, overview, editor behavior, exact prompts, and acceptance criteria.
 
 The no-prompts editor behavior above applies to regular free-writing. Gratitude entries display their assigned prompt while reusing the same journal storage, privacy, and editing behavior.
+
+## December Reflections
+
+In December the seasonal card slot shows **December Reflections**: one optional prompt for each day of December, all open at any time, with no streak or locked days. It is separate from the Bible Study Christmas study. See the [December Reflections specification](../Journaling/december-reflections.md).
 
 ## Explore prompts
 
