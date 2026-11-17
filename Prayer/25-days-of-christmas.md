@@ -5,7 +5,7 @@
 **Platforms:** Shared product behavior for Android (Kotlin) and iOS.  
 **Campaign:** December / Christmas season.  
 **Card subtitle:** Meet Jesus through Scripture, one day at a time.  
-**Translation:** NIV.
+**Translation:** references are NIV; Read passage opens the existing Bible reader in the user's current version.
 
 ## Purpose
 
@@ -77,7 +77,7 @@ Opened from **See all 25 days**, **Review study**, or the back action on a day.
 | Top bar | Back action; save status (**Saving…** / **Saved just now** / empty when nothing is written) |
 | Day label | **Day {n} · {Weekday}, December {n}** |
 | Title | The day's title (heading style) |
-| Reading | **READING · NIV** / the passage reference, with a **Read passage** button |
+| Reading | **READING** / the passage reference, with a **Read passage** button |
 | Reflect | **REFLECT** / the day's reflection question |
 | Reflection field | Optional. Placeholder: **Write your reflection (optional)** |
 | Privacy line | 🔒 **Private to you. Saved with this day, not in Journal unless you copy it.** |
@@ -85,7 +85,7 @@ Opened from **See all 25 days**, **Review study**, or the back action on a day.
 | Actions (complete) | **✓ Day {n} complete** badge, **Go to Day {n+1}** (primary; on Day 25 the badge only), **Copy to Journal**, **Mark as not complete** |
 
 Rules:
-- **Read passage** opens the existing Bible reader at the passage's book, chapter, and first verse, in NIV, and does not change the reader's saved version preference. Back returns to the same day with any typed text intact.
+- **Read passage** opens the existing Bible reader at the passage's book, chapter, and first verse, exactly as the reader works today (the user's current version and saved position behavior). Back returns to the same day with any typed text intact.
 - The reflection autosaves while typing (debounced) and on leaving the screen. **Save reflection** saves immediately. The top bar shows the saved state.
 - Whitespace-only text is not saved as a reflection.
 - **Mark day complete** works with or without a reflection, and saves any typed text first.
@@ -215,7 +215,7 @@ Figma › Version 3.0 › [25 Days of Christmas](https://www.figma.com/design/II
 - [ ] **See all 25 days** lists Day 1–25 with dates, titles, references, outline sections, and correct states.
 - [ ] Every day can be opened at any time; no day is locked.
 - [ ] All titles, readings, and questions match the table above and map to the correct stable IDs.
-- [ ] **Read passage** opens the Bible reader at the right book, chapter, and verse in NIV, without changing the user's saved reader version; back returns to the same day.
+- [ ] **Read passage** opens the existing Bible reader at the right book, chapter, and verse; back returns to the same day.
 - [ ] Reflections autosave and show a saved state; **Save reflection** is disabled with no text.
 - [ ] A day can be completed without a reflection, and progress increases exactly once.
 - [ ] Completed days stay editable; **Mark as not complete** lowers progress and keeps the reflection.
@@ -235,5 +235,5 @@ Figma › Version 3.0 › [25 Days of Christmas](https://www.figma.com/design/II
 - **Placement:** Prayer screen, next to Read the Bible (the app has no separate Bible Study screen yet). Nov 2026.
 - **Access:** open to everyone, Free and Premium. Nov 2026.
 - **Card timing:** December 1 through December 31; leaves on January 1. Nov 2026.
-- **Translation:** NIV, per the app-wide Scripture rule.
+- **Read passage:** opens the Bible reader the app already has, with no study-specific version or mode. Nov 2026.
 - **Journal:** reflections stay in the study; Copy to Journal is opt-in.
