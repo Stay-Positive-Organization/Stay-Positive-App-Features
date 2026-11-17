@@ -224,8 +224,5 @@ Adapt to the existing Journal schema rather than a separate store of reflection 
 ## Decisions
 
 - **Access:** open to everyone, Free and Premium. No Premium badge on the card. (Dictation inside the editor keeps its existing Premium rule.)
-- **Card timing:** the December Reflections card replaces the November gratitude card in the seasonal slot starting December 1 (user's local time). Saved gratitude entries stay in the Journal list.
+- **Card timing:** the December Reflections card replaces the November gratitude card in the seasonal slot from December 1 through December 31 (user's local time), and leaves the Journal tab on January 1. Saved gratitude and December entries stay in the Journal list and calendar after their cards are gone.
 
-## Product decisions still to confirm
-
-- When the December card leaves the Journal tab (e.g. early January). Saved reflections stay in the Journal list either way.
