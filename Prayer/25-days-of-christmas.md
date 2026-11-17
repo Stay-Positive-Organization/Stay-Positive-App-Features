@@ -53,7 +53,7 @@ Sits on the Prayer screen under the greeting and above **Scripture of the day**.
 - **Start study** opens Day 1.
 - **Continue Day {n}** opens the lowest-numbered day that isn't complete.
 - **Review study** opens the overview (All 25 days).
-- "In progress" starts once any day is completed or any reflection is saved.
+- "In progress" starts once any day is completed, any reflection is saved, or any verse is added.
 - Progress counts distinct completed days only. Opening a day, reading the passage, or saving a reflection does not count.
 - Progress uses a thin bar plus the text count, so it doesn't rely on color alone.
 - "See all 25 days" is a text link, not a second button.
@@ -66,7 +66,7 @@ Opened from **See all 25 days**, **Review study**, or the back action on a day.
 - Intro: **From the promise of a Savior to His birth. Open any day, any time.**
 - Progress card: **{completedCount} of 25 days complete**, progress bar, and the same primary action as the card (Continue Day {n} / Review study).
 - **All 25 days**, grouped under the five outline sections (small labels, e.g. DAYS 1–4 · THE PROMISE OF THE MESSIAH).
-- Each row shows the day number, date (e.g. "Mon, Dec 7"), title, passage reference, and state: **Not started**, **In progress** (reflection saved, not complete), or **Completed**. State is text plus icon, not color alone.
+- Each row shows the day number, date (e.g. "Mon, Dec 7"), title, passage reference, and state: **Not started**, **In progress** (reflection or verse saved, not complete), or **Completed**. State is text plus icon, not color alone.
 - Today's day (Dec 1–25) shows a "Today" label. This is a pointer, not a restriction.
 - Tapping any row opens that day.
 
@@ -79,6 +79,7 @@ Opened from **See all 25 days**, **Review study**, or the back action on a day.
 | Title | The day's title (heading style) |
 | Reading | **READING** / the passage reference, with a **Read passage** button |
 | Reflect | **REFLECT** / the day's reflection question |
+| Verses you highlighted | Shown only when the person has added verses from the reader. **VERSES YOU HIGHLIGHTED**, then one card per verse: verse text, reference · version, and a remove (×) action |
 | Reflection field | Optional. Placeholder: **Write your reflection (optional)** |
 | Privacy line | 🔒 **Private to you. Saved with this day, not in Journal unless you copy it.** |
 | Actions (not complete) | **Save reflection** (outline; disabled with no text) and **Mark day complete** (primary) |
@@ -91,8 +92,25 @@ Rules:
 - **Mark day complete** works with or without a reflection, and saves any typed text first.
 - A completed day stays editable. Editing doesn't change its completion.
 - **Mark as not complete** returns the day to In progress (or Not started if there's no reflection), lowers progress, and keeps the reflection.
-- **Copy to Journal** appears once a reflection is saved. It creates one regular Journal entry with the day's title, reference, question, and reflection, labeled **25 DAYS OF CHRISTMAS · DAY {n}**, then shows "Copied to Journal" with a View action. The link reads **Copied to Journal** until the reflection changes. The copy is independent: later edits on either side don't sync.
+- **Copy to Journal** appears once a reflection or verse is saved. It creates one regular Journal entry with the day's title, reference, question, highlighted verses, and reflection, labeled **25 DAYS OF CHRISTMAS · DAY {n}**, then shows "Copied to Journal" with a View action. The link reads **Copied to Journal** until the reflection or verses change. The copy is independent: later edits on either side don't sync.
 - Don't confirm a save until the write succeeds. On failure, keep the text, show a retry, and leave the day's state unchanged.
+
+## Adding highlighted verses from the reader
+
+When **Read passage** opens the reader from a study day, the reader works as it does today (same version, chapter navigation, verse tap to highlight, Save note), with two additions that only appear in this case:
+
+- A slim banner under the top bar: **25 DAYS OF CHRISTMAS · DAY {n} · {reading}**.
+- When a verse is highlighted, a bar at the bottom shows "{reference} selected" and **Add to Day {n} reflection**.
+
+Tapping **Add to Day {n} reflection**:
+- Adds the highlighted verse (text, reference, and the version shown in the reader) to that day, saved right away.
+- Clears the highlight and shows "{reference} added to your Day {n} reflection" with a **Back to Day {n}** action.
+- Lets the person highlight and add more verses, from this chapter or any other.
+- Ignores a verse that's already on that day (same reference and version) and says "Already in your Day {n} reflection".
+
+Back (or **Back to Day {n}**) returns to the day screen, where the added verses show under **VERSES YOU HIGHLIGHTED** above the reflection field, in the order they were added. Each card can be removed with ×. **Save note** keeps working as it does today and is independent of the study.
+
+Opened any other way (Prayer › **Read the Bible**), the reader shows neither the banner nor the Add bar.
 
 ## Study complete
 
@@ -111,7 +129,7 @@ No confetti, countdowns, or guilt-based messaging for missed days, ever.
 
 - Header: **My reflections**, back action.
 - Intro: **Only you can see these. They stay with the study, separate from Journal.**
-- One card per day with a saved reflection, Day 25 first: day and date, title · reference, and the reflection (preview).
+- One card per day with a saved reflection or highlighted verse, Day 25 first: day and date, title · reference, and the reflection (preview), or the first highlighted verse when there's no text.
 - Tapping a card opens that day.
 - Empty state (no reflections yet): **Your reflections will show here when you write one.**
 
@@ -189,7 +207,7 @@ Support large text, screen readers (progress announced as "{n} of 25 days comple
 
 **Study (bundled content):** `id` (`christmas-2026`), `title`, `description`, `startDate` (Dec 1), `endDate` (Dec 25), `cardEndDate` (Dec 31), `totalDays` (25), and the 25 days: `dayNumber`, `dayId`, `title`, `theme` (outline section), `passageReference`, `reflectionPrompt`.
 
-**Per user, per day** (only for days the user has touched): `dayId`, `reflectionText`, `isComplete`, `completedAt`, `updatedAt`, `copiedToJournalAt` (optional).
+**Per user, per day** (only for days the user has touched): `dayId`, `reflectionText`, `highlightedVerses` (list of `reference`, `version`, `text`, `addedAt`), `isComplete`, `completedAt`, `updatedAt`, `copiedToJournalAt` (optional).
 
 - Stored separately from Journal entries and December Reflections.
 - At most one record per user/study/day.
@@ -203,6 +221,7 @@ Figma › Version 3.0 › [25 Days of Christmas](https://www.figma.com/design/II
 - [Prayer screen, card not started](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3332-1501) · [card in progress](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3332-1570) · [Card component, 3 states](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3331-1196)
 - [All 25 days](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3332-1640) · [Day row component](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3331-1262)
 - [Day, not started](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3333-1467) · [Day, reflection written](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3333-1551) · [Day, completed](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3333-1635)
+- [Reader, verse highlighted](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3339-1670) · [Reader, verse added](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3339-1714) · [Highlighted verse card component](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3339-1642)
 - [Study complete](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3333-1720) · [My reflections](https://www.figma.com/design/IICrUhTo29kVu3ANnwPG9H/Stay-Positive-App?node-id=3333-1779)
 
 ## Acceptance criteria
@@ -218,6 +237,8 @@ Figma › Version 3.0 › [25 Days of Christmas](https://www.figma.com/design/II
 - [ ] **Read passage** opens the existing Bible reader at the right book, chapter, and verse; back returns to the same day.
 - [ ] Reflections autosave and show a saved state; **Save reflection** is disabled with no text.
 - [ ] A day can be completed without a reflection, and progress increases exactly once.
+- [ ] Opened from a study day, the reader shows **Add to Day {n} reflection** for a highlighted verse; added verses appear as cards on that day, can be removed, aren't duplicated, and survive restarts and other devices.
+- [ ] Opened normally (Prayer › Read the Bible), the reader shows no study banner or Add to reflection.
 - [ ] Completed days stay editable; **Mark as not complete** lowers progress and keeps the reflection.
 - [ ] Reflections never appear in Journal unless the user taps **Copy to Journal**, which creates exactly one entry per tap-after-change.
 - [ ] Completing the 25th distinct day shows the study-complete screen with **Review my reflections** and **Revisit the study**.
@@ -237,3 +258,4 @@ Figma › Version 3.0 › [25 Days of Christmas](https://www.figma.com/design/II
 - **Card timing:** December 1 through December 31; leaves on January 1. Nov 2026.
 - **Read passage:** opens the Bible reader the app already has, with no study-specific version or mode. Nov 2026.
 - **Journal:** reflections stay in the study; Copy to Journal is opt-in.
+- **Highlighted verses:** verses added from the reader show as separate, removable cards above the reflection, not pasted into the text. Nov 2026.
