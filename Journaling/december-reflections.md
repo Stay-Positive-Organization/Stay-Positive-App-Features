@@ -216,8 +216,12 @@ Adapt to the existing Journal schema rather than a separate store of reflection 
 - [ ] Reflection text is excluded from analytics, logs, notifications and previews.
 - [ ] Large text, screen readers and small screens remain usable.
 
+## Decisions
+
+- **Access:** open to everyone, Free and Premium. No Premium badge on the card. (Dictation inside the editor keeps its existing Premium rule.)
+- **Card timing:** the December Reflections card replaces the November gratitude card in the seasonal slot starting December 1 (user's local time). Saved gratitude entries stay in the Journal list.
+
 ## Product decisions still to confirm
 
-- Free/Premium entitlement (assumed open to everyone, like 30 Days of Gratitude, until confirmed).
-- When the December card replaces the November card (e.g. December 1) and when it leaves the Journal tab (e.g. early January). Saved reflections stay in the Journal list either way.
+- When the December card leaves the Journal tab (e.g. early January). Saved reflections stay in the Journal list either way.
 - Sage hex: the request references #86A597; the design tokens list `sage` as #8FB0A1. Figma's color style decides.
