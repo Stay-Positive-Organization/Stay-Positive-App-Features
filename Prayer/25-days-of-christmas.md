@@ -11,7 +11,7 @@
 
 Help people explore the story and meaning of Jesus' coming through one short Bible study a day from December 1 to 25. The study moves from the promises about the Messiah to Jesus' birth and the response of the people who encountered Him. Each day has a passage, a reflection question, and an optional private reflection.
 
-This is a **Bible Study** experience, separate from [December Reflections](../Journaling/december-reflections.md) in Journal. The two never share progress, completion, or entries. A study reflection appears in Journal only if the person chooses **Copy to Journal**.
+This is a **Bible Study** experience, separate from [December Reflections](../Journaling/december-reflections.md) in Journal. The two never share progress, completion, or entries. Study reflections stay in the study and never appear in Journal.
 
 The app has no separate Bible Study screen yet, so the study card lives on the Prayer screen, next to Read the Bible.
 
@@ -21,11 +21,13 @@ The app has no separate Bible Study screen yet, so the study card lives on the P
 - An overview listing all 25 days and their state.
 - A daily study screen: passage reference, **Read passage**, reflection question, optional reflection, **Save reflection**, **Mark day complete**.
 - A study-complete screen and a **My reflections** screen.
-- Optional **Copy to Journal** for a saved reflection.
+
+**Not in this version:** Copy to Journal (dropped Nov 2026; reflections stay in the study).
 
 Self-paced by design:
 - No locked days. Day 20 can be opened on December 3.
-- No streak, deadline, countdown, or reset. Missing a day has no consequence.
+- No study streak, deadline, countdown, or reset. Missing a day has no consequence.
+- Marking a day complete counts toward the app-wide streak, like any other activity (logged as Prayer). The study itself never shows a streak.
 - Days can be completed in any order, revisited, and edited.
 - Writing is optional. A day can be completed without a reflection.
 
@@ -81,9 +83,9 @@ Opened from **See all 25 days**, **Review study**, or the back action on a day.
 | Reflect | **REFLECT** / the day's reflection question |
 | Verses you highlighted | Shown only when the person has added verses from the reader. **VERSES YOU HIGHLIGHTED**, then one card per verse: verse text, reference · version, and a remove (×) action |
 | Reflection field | Optional. Placeholder: **Write your reflection (optional)** |
-| Privacy line | 🔒 **Private to you. Saved with this day, not in Journal unless you copy it.** |
+| Privacy line | 🔒 **Private to you. Saved with this day, not in Journal.** |
 | Actions (not complete) | **Save reflection** (outline; disabled with no text) and **Mark day complete** (primary) |
-| Actions (complete) | **✓ Day {n} complete** badge, **Go to Day {n+1}** (primary; on Day 25 the badge only), **Copy to Journal**, **Mark as not complete** |
+| Actions (complete) | **✓ Day {n} complete** badge, **Go to Day {n+1}** (primary; on Day 25 the badge only), **Mark as not complete** |
 
 Rules:
 - **Read passage** opens the existing Bible reader at the passage's book, chapter, and first verse, exactly as the reader works today (the user's current version and saved position behavior). Back returns to the same day with any typed text intact.
@@ -92,7 +94,6 @@ Rules:
 - **Mark day complete** works with or without a reflection, and saves any typed text first.
 - A completed day stays editable. Editing doesn't change its completion.
 - **Mark as not complete** returns the day to In progress (or Not started if there's no reflection), lowers progress, and keeps the reflection.
-- **Copy to Journal** appears once a reflection or verse is saved. It creates one regular Journal entry with the day's title, reference, question, highlighted verses, and reflection, labeled **25 DAYS OF CHRISTMAS · DAY {n}**, then shows "Copied to Journal" with a View action. The link reads **Copied to Journal** until the reflection or verses change. The copy is independent: later edits on either side don't sync.
 - Don't confirm a save until the write succeeds. On failure, keep the text, show a retry, and leave the day's state unchanged.
 
 ## Adding highlighted verses from the reader
@@ -201,13 +202,14 @@ Support large text, screen readers (progress announced as "{n} of 25 days comple
 - Reflections are visible only to their owner.
 - Reflection text never appears in Home previews, notifications, analytics, or logs.
 - No use for personalization without explicit consent.
-- No sharing in this version. Copy to Journal is the only way a reflection leaves the study.
+- No sharing or Copy to Journal in this version. Reflections never leave the study.
+- Deleting the account deletes the person's study progress and reflections.
 
 ## Suggested data structure
 
 **Study (bundled content):** `id` (`christmas-2026`), `title`, `description`, `startDate` (Dec 1), `endDate` (Dec 25), `cardEndDate` (Dec 31), `totalDays` (25), and the 25 days: `dayNumber`, `dayId`, `title`, `theme` (outline section), `passageReference`, `reflectionPrompt`.
 
-**Per user, per day** (only for days the user has touched): `dayId`, `reflectionText`, `highlightedVerses` (list of `reference`, `version`, `text`, `addedAt`), `isComplete`, `completedAt`, `updatedAt`, `copiedToJournalAt` (optional).
+**Per user, per day** (only for days the user has touched): `dayId`, `reflectionText`, `highlightedVerses` (list of `reference`, `version`, `text`, `addedAt`), `isComplete`, `completedAt`, `updatedAt`.
 
 - Stored separately from Journal entries and December Reflections.
 - At most one record per user/study/day.
@@ -240,14 +242,16 @@ Figma › Version 3.0 › [25 Days of Christmas](https://www.figma.com/design/II
 - [ ] Opened from a study day, the reader shows **Add to Day {n} reflection** for a highlighted verse; added verses appear as cards on that day, can be removed, aren't duplicated, and survive restarts and other devices.
 - [ ] Opened normally (Prayer › Read the Bible), the reader shows no study banner or Add to reflection.
 - [ ] Completed days stay editable; **Mark as not complete** lowers progress and keeps the reflection.
-- [ ] Reflections never appear in Journal unless the user taps **Copy to Journal**, which creates exactly one entry per tap-after-change.
+- [ ] Reflections never appear in Journal, and the day screen has no Copy to Journal action.
+- [ ] Marking a day complete counts toward the app-wide streak (Prayer); saving a reflection or adding a verse alone doesn't.
 - [ ] Completing the 25th distinct day shows the study-complete screen with **Review my reflections** and **Revisit the study**.
 - [ ] My reflections lists every day with a saved reflection.
 - [ ] Progress and reflections survive leaving the screen, restarting the app, and signing in on another device.
 - [ ] A failed save keeps the text and doesn't show a false confirmation.
-- [ ] No streak, deadline, lock, or reset exists in this feature.
+- [ ] No study streak, deadline, lock, or reset exists in this feature.
 - [ ] 25 Days of Christmas and December Reflections progress are fully independent.
 - [ ] Another account can't read the person's reflections or progress.
+- [ ] Deleting the account removes the person's study progress and reflections.
 - [ ] Reflection text is excluded from analytics, logs, notifications, and previews.
 - [ ] Large text, screen readers, and small screens remain usable.
 
@@ -257,5 +261,7 @@ Figma › Version 3.0 › [25 Days of Christmas](https://www.figma.com/design/II
 - **Access:** open to everyone, Free and Premium. Nov 2026.
 - **Card timing:** December 1 through December 31; leaves on January 1. Nov 2026.
 - **Read passage:** opens the Bible reader the app already has, with no study-specific version or mode. Nov 2026.
-- **Journal:** reflections stay in the study; Copy to Journal is opt-in.
+- **Journal:** reflections stay in the study. Copy to Journal is dropped from this version. Nov 2026.
+- **Streak:** the study has no streak of its own, but marking a day complete counts toward the app-wide streak as Prayer. Nov 2026.
+- **Account deletion:** deleting the account removes the study progress and reflections. Nov 2026.
 - **Highlighted verses:** verses added from the reader show as separate, removable cards above the reflection, not pasted into the text. Nov 2026.
